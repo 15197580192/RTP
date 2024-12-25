@@ -1,0 +1,90 @@
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is1
+执行程序：./build/is1
+总共耗时: 0.857 秒
+查询结果：
+data:'firstName': 'Jack', 'lastName': 'Thompson', 'birthday': '1989-09-07', 'locationIP': '46.16.37.182', 'browserUsed': 'Internet Explorer', 'cityId': '29963691', 'gender': 'female', 'creationDate': '2010-08-13T13:29:30.196+0000'
+---------------------------------------
+'firstName': 'Jack', 'lastName': 'Thompson', 'birthday': '1989-09-07', 'locationIP': '46.16.37.182', 'browserUsed': 'Internet Explorer', 'cityId': '29963691', 'gender': 'female', 'creationDate': '2010-08-13T13:29:30.196+0000'
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is2
+执行程序：./build/is2
+总共耗时: 1.846 秒
+查询结果：
+---------------------------------------
+'messageId': '13913213', 'messageCreationDate': '2012-07-28T00:22:07.066+0000', 'messageContent': 'About Thomas Hardy', 'postId': '2247212', 'personId': '29320738', 'personFirstName': 'Aharon', 'personLastName': 'Levy'
+1343406127066
+---------------------------------------
+'messageId': '17107596', 'messageCreationDate': '2012-07-27T10:59:43.873+0000', 'messageContent': 'About Wolfgang Amadeus Mozart', 'postId': '3324786', 'personId': '29330271', 'personFirstName': 'Andre', 'personLastName': 'Seck'
+1343357983873
+---------------------------------------
+'messageId': '13913420', 'messageCreationDate': '2012-07-24T19:47:44.249+0000', 'messageContent': 'duh', 'postId': '2247233', 'personId': '29320738', 'personFirstName': 'Aharon', 'personLastName': 'Levy'
+1343130464249
+---------------------------------------
+'messageId': '13913420', 'messageCreationDate': None, 'messageContent': None, 'postId': '2247233', 'personId': '29320738', 'personFirstName': 'Aharon', 'personLastName': 'Levy'
+-2209104342952
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is3
+执行程序：./build/is3
+总共耗时: 0.869 秒
+查询结果：
+---------------------------------------
+'personId': '29320738', 'firstName': 'Aharon', 'lastName': 'Levy', 'friendshipCreationDate': '2012-07-18T09:56:20.048+0000'
+---------------------------------------
+'personId': '29352805', 'firstName': 'Manuel', 'lastName': 'Cardenas', 'friendshipCreationDate': '2012-03-24T16:25:28.803+0000'
+---------------------------------------
+'personId': '29330271', 'firstName': 'Andre', 'lastName': 'Seck', 'friendshipCreationDate': '2012-03-05T00:37:29.030+0000'
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is4
+执行程序：./build/is4
+总共耗时: 0.865 秒
+查询结果：
+---------------------------------------
+'messageCreationDate': '2011-09-28T09:34:16.767+0000', 'messageContent': 'no way!'
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is5
+执行程序：./build/is5
+总共耗时: 1.370 秒
+查询结果：
+---------------------------------------
+'personId': '29335323', 'firstName': 'Peng', 'lastName': 'Cao'
+---------------------------------------
+'personId': '29351401', 'firstName': 'Bing', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29335171', 'firstName': 'Yang', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29352257', 'firstName': 'Peng', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29342915', 'firstName': 'Chen', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29335183', 'firstName': 'Hao', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29344107', 'firstName': 'Yang', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29324858', 'firstName': 'Yang', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29348568', 'firstName': 'Li', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29305637', 'firstName': 'Hao', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29338620', 'firstName': 'Cheng', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29308318', 'firstName': 'Lei', 'lastName': 'Chen'
+---------------------------------------
+'personId': '29363989', 'firstName': 'Peng', 'lastName': 'Hu'
+---------------------------------------
+'personId': '29337062', 'firstName': 'Bingyi', 'lastName': 'Hu'
+---------------------------------------
+'personId': '29351742', 'firstName': 'Li', 'lastName': 'Hu'
+---------------------------------------
+'personId': '29324198', 'firstName': 'Yang', 'lastName': 'Huang'
+---------------------------------------
+'personId': '29357254', 'firstName': 'Bingbing', 'lastName': 'Huang'
+---------------------------------------
+'personId': '29306730', 'firstName': 'Jun', 'lastName': 'Li'
+---------------------------------------
+'personId': '29318529', 'firstName': 'Lei', 'lastName': 'Li'
+---------------------------------------
+'personId': '29338650', 'firstName': 'Michael', 'lastName': 'Li'
+root@slave2:/home/hzy/RSP/code# bash run.sh ./build/is7
+执行程序：./build/is7
+总共耗时: 2.506 秒
+查询结果：
+---------------------------------------
+'commentId': '19968690', 'commentContent': 'good', 'commentCreationDate': '2011-09-28T05:07:36.527+0000', 'replyAuthorId': '29345401', 'replyAuthorFirstName': 'Aditya', 'replyAuthorLastName': 'Reddy', 'replyAuthorKnowsOriginalMessageAuthor': false
+

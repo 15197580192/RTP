@@ -1,0 +1,1 @@
+/usr/bin/c++    -rdynamic CMakeFiles/is5.dir/mpiQueryExecution_short_5.cpp.o  -o is5  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/openmpi/lib -lpython3.8 /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi_cxx.so /usr/lib/x86_64-linux-gnu/openmpi/lib/libmpi.so 

@@ -1,0 +1,9 @@
+MATCH
+    (person1:Person {id: "87095182"}),
+    (person2:Person {id: "87129523"}),
+    path = shortestPath((person1)-[:knows*]-(person2))
+RETURN
+    CASE path IS NULL
+        WHEN true THEN -1
+        ELSE length(path)
+    END AS shortestPathLength
