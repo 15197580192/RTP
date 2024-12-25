@@ -1,4 +1,8 @@
 # RSP-query
+## environment
+python3
+mpi
+python module required: py2neo
 ## build
 ```
 bash build.sh
