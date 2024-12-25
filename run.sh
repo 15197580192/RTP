@@ -31,7 +31,7 @@ execution_time_sec=$(echo "scale=3; $execution_time / 1000" | bc)
 # 使用 printf 格式化输出，总是保留三位小数
 printf "总共耗时: %.3f 秒\n" $execution_time_sec
 
-# 去除 mpi_output 的第一行
+# 去除 mpi_output 的第一行(No protocol specified)
 mpi_output_no_first_line=$(echo "$mpi_output" | sed '1d')
 
 # 输出去除第一行后的 MPI 程序输出
