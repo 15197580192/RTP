@@ -66,7 +66,9 @@ def get_result(sentence, nowIP):
     return str(resList)
 
 if __name__ == "__main__":
-    sentence = "match (n:Person) return n limit 10"
+    # sentence = "MATCH (m:Comment{id:\"19968660\"})-[:hasCreator]->(p:Person) RETURN p"
+    sentence = "MATCH (m:Comment{id:\"7435714\"})-[:hasCreator]->(p:Person) RETURN p"
+    # sentence = "MATCH (m:Comment) return m limit 10"
     print(get_result(sentence, "bolt://10.64.68.18:7687/"))
     print(get_result(sentence, "bolt://10.64.68.19:7687/"))
     print(get_result(sentence, "bolt://10.64.68.20:7687/"))

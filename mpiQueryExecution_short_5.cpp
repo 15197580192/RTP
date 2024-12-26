@@ -182,6 +182,7 @@ void print(Query2Result q) {
     cout << "'personId': " << q.personId << ", 'firstName': " << q.firstName << ", 'lastName': " << q.lastName << endl;
 }
 
+
 int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
@@ -248,26 +249,46 @@ int main(int argc, char** argv) {
                     else {
                         vector<string> now_ans = getAnsList(results[j]);
                         for (int k = 0; k < now_ans.size(); k++) {
-                            query1_ans_list.push_back(now_ans[k]);
+                            query2_ans_list.push_back(now_ans[k]);
                         }
                     }
                 }
 
                 // cout << "query1_ans_list: " << query1_ans_list.size() << endl;
-                tid = "WHERE author.id IN [";
 
-                for (int j = 0; j < query1_ans_list.size(); j++) {
-                    Query1Result q1;
-                    q1 = parseQuery1Results(query1_ans_list[j]);
-                    query1Results.push_back(q1);
-                    if (j == 0) {
-                        tid = tid + q1.personId;
-                    }
-                    else {
-                        tid = tid + ", " + q1.personId;
-                    }
+                for (int j = 0; j < query2_ans_list.size(); j++) {
+                    Query2Result q1;
+                    q1 = parseQuery2Results(query2_ans_list[j]);
+                    query2Results.push_back(q1);
                 }
-                tid = tid + "]\n";
+
+                auto now = chrono::system_clock::now();
+                auto duration_since_epoch = now.time_since_epoch();
+                auto seconds = chrono::duration_cast<chrono::seconds>(duration_since_epoch);
+                auto milliseconds = chrono::duration_cast<chrono::milliseconds>(duration_since_epoch - seconds);
+                time_t now_time_t = chrono::system_clock::to_time_t(now);
+                tm* now_tm = localtime(&now_time_t);
+                fout << i << " " << world_rank << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
+                for (int i = 0; i < query2Results.size(); i++) {
+                    if(query2Results[i].firstName!="None")
+                        print(query2Results[i]);
+                }
+
+                // // cout << "query1_ans_list: " << query1_ans_list.size() << endl;
+                // tid = "WHERE author.id IN [";
+
+                // for (int j = 0; j < query1_ans_list.size(); j++) {
+                //     Query1Result q1;
+                //     q1 = parseQuery1Results(query1_ans_list[j]);
+                //     query1Results.push_back(q1);
+                //     if (j == 0) {
+                //         tid = tid + q1.personId;
+                //     }
+                //     else {
+                //         tid = tid + ", " + q1.personId;
+                //     }
+                // }
+                // tid = tid + "]\n";
             } else {
                 auto now = chrono::system_clock::now();
                 auto duration_since_epoch = now.time_since_epoch();
@@ -342,7 +363,7 @@ int main(int argc, char** argv) {
                 // cout << "------------------------" << endl;
                 // cout << "节点0 results.size: " << results.size() << endl;
                 for (int j = 0; j < results.size(); ++j) {
-                    // cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
+                    cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
                     if (results[j].length() == 2) {
                         continue;
                     }
@@ -370,11 +391,10 @@ int main(int argc, char** argv) {
                 time_t now_time_t = chrono::system_clock::to_time_t(now);
                 tm* now_tm = localtime(&now_time_t);
                 fout << i << " " << world_rank << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
-
+                std::cout<<query2Results.size()<<std::endl;
                 for (int j = 0; j < query2Results.size(); j++) {
-                    if (j < 20) {
-                       print(query2Results[j]);
-                    }
+                    if(query2Results[i].firstName.length()>0)
+                        print(query2Results[j]);
                 }
             }
 
