@@ -1,0 +1,6 @@
+label:tagclass id:15270 name:Album url:http://dbpedia.org/ontology/Album 
+label:tagclass id:15248 name:ChristianBishop url:http://dbpedia.org/ontology/ChristianBishop 
+label:tagclass id:15246 name:NascarDriver url:http://dbpedia.org/ontology/NascarDriver 
+label:tagclass id:15217 name:Saint url:http://dbpedia.org/ontology/Saint 
+label:tagclass id:15214 name:Monarch url:http://dbpedia.org/ontology/Monarch 
+label:tagclass id:15258 name:Governor url:http://dbpedia.org/ontology/Governor 

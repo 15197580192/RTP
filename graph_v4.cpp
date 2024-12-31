@@ -18,35 +18,35 @@ vector<int>rank1;
 ofstream fout, fout1, fout2, fout3;
 typedef pair<int, vector<int> > PII;
 
-int node_cnt[282640000];
+int node_cnt[327588];
 
 int ccnt = 1;
 
-int new_property_num[] = {6, 4, 8, 3, 8, 3, 3, 4};
+int new_property_num[] = {4, 3, 3, 4, 3, 6, 10, 8};
 
 int judge_label(int node_id) {
-	if (node_id >= 0 && node_id <= 220096051) {
+	if (node_id >= 0 && node_id <= 1459) {
 		return 0;
 	}
-	if (node_id >= 220096052 && node_id <= 220097511) {
+	if (node_id >= 1460 && node_id <= 15209) {
 		return 1;
 	}
-	if (node_id >= 220097512 && node_id <= 220546137) {
+	if (node_id >= 15210 && node_id <= 15280) {
 		return 2;
 	}
-	if (node_id >= 220546138 && node_id <= 220546208) {
+	if (node_id >= 15281 && node_id <= 23235) {
 		return 3;
 	}
-	if (node_id >= 220546209 && node_id <= 278533231) {
+	if (node_id >= 23236 && node_id <= 39315) {
 		return 4;
 	}
-	if (node_id >= 278533232 && node_id <= 282613835) {
+	if (node_id >= 39316 && node_id <= 190358) {
 		return 5;
 	}
-	if (node_id >= 282613836 && node_id <= 282629915) {
+	if (node_id >= 190359 && node_id <= 191886) {
 		return 6;
 	}
-	if (node_id >= 282629916 && node_id <= 282637870) {
+	if (node_id >= 191887&& node_id <= 327587) {
 		return 7;
 	}
 	return 0;
@@ -193,7 +193,7 @@ void create_Connected(string filename) {
 	nodes.erase(unique(nodes.begin(), nodes.end()),  nodes.end());
 	n_num = nodes.size();
 
-	DisJointSetUnion(282640000);
+	DisJointSetUnion(327588);
 
 	while (getline(fin_relationships2, s)) {
 		vector<string> vec;
@@ -211,7 +211,7 @@ void create_Connected(string filename) {
 	fin_relationships2.close();
 	vector<int> t;
     t.push_back(11);
-    for (int i = 0; i < 282640000; i++){
+    for (int i = 0; i < 327588; i++){
         nodes_parent.push_back({i, t});
     }
 
@@ -235,7 +235,7 @@ void create_Connected(string filename) {
 	}
 
     string file_name_clear = getFileName(file_name);
-    for (int i = 0; i < 282640000; i++) {
+    for (int i = 0; i < 327588; i++) {
         if (nodes_parent[i].second.size() > 1) {
 		    fout << ccnt << " ";
 		    fout1 << ccnt << ":";
@@ -258,11 +258,11 @@ void create_Connected(string filename) {
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-	fout.open("/sys/fs/cgroup/new_SF100/connected_size_all_v4.txt");
-	fout1.open("/sys/fs/cgroup/new_SF100/region_component_v4.txt");
-	fout2.open("/sys/fs/cgroup/new_SF100/done_file_name_v4.txt");
-	fout3.open("/sys/fs/cgroup/new_SF100/connected_label_v4.txt");
-	string file_path = "/sys/fs/cgroup/new_SF100/new_output_relationships";
+	fout.open("./output/new_SF1000/connected_size_all_v4.txt");
+	fout1.open("./output/new_SF1000/region_component_v4.txt");
+	fout2.open("./output/new_SF1000/done_file_name_v4.txt");
+	fout3.open("./output/new_SF1000/connected_label_v4.txt");
+	string file_path = "./output/new_SF1000/new_output_relationships";
 	vector<string> my_file;
 	string need_extension = "txt";
 	get_need_file(file_path, my_file, need_extension);

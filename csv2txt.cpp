@@ -67,14 +67,14 @@ struct item {
 };
 
 int main() {
-	string file_path = "./import100";
-	vector<string> my_file;
+	string file_path = "./import";
+	vector<string> my_file;//files
 	get_need_file(file_path, my_file, "csv");
 
-	ofstream fout1;
-	fout1.open("/sys/fs/cgroup/new_SF100/new_output_nodes.txt");
-	ofstream fout2;
-	fout2.open("/sys/fs/cgroup/new_SF100/new_output_relationships.txt");
+	ofstream fout1;//nodes
+	fout1.open("./output/new_SF1000/new_output_nodes.txt");// nodepath
+	ofstream fout2;//relationship
+	fout2.open("./output/new_SF1000/new_output_relationships.txt");// relationpath
 
 	vector<item> graph;
 	string s;
@@ -104,7 +104,9 @@ int main() {
 			int positionB = my_file[i].rfind('/');
 			//cout << position << endl;
 			string label = my_file[i].substr(positionB+1, positionA-positionB-1);
-			cout << "label:" <<label << endl;
+			cout << "label:" <<label <<" properties num:"<<vecSize<< endl;
+
+			std::cout<< "label:" << label << " "<<vecLabel[0] << ":" << nodeID<<std::endl;
 
 			while (getline(fin, s)) {
 				vector<string> vec;
@@ -128,6 +130,7 @@ int main() {
 				fout1 << endl;
 				nodeID++;
 			}
+			std::cout<< "label:" << label << " "<<vecLabel[0] << ":" << nodeID-1<<std::endl;
 		}
 	}
 	
@@ -147,8 +150,8 @@ int main() {
 			int pos2 = relationship_type.find("_");
 			int pos3 = relationship_type.find("_", pos2 + 1);
 			relationship_type = relationship_type.substr(pos2 + 1, pos3 - pos2 - 1);
-			cout << relationship_type;
-			string output = "/sys/fs/cgroup/new_SF100/new_output_relationships/";
+			cout << "-----"<<relationship_type<<std::endl;
+			string output = "./output/new_SF1000/new_output_relationships/"; // relaitons path divided in parts
 
 			ofstream fout;
 			fout.open(output.append(relationship_type).append(".txt"), ofstream::app);
@@ -188,7 +191,7 @@ int main() {
 				fout << "id:" << relationshipID << " ";
 				for (j = 0; j < vecSize; j++) {
 					if (q.count(vec[j]+nodeLabel[j])!=1){
-						cout<<"erro: q has no key "<<vec[j]+nodeLabel[j]<<endl;
+						// cout<<"erro: q has no key "<<vec[j]+nodeLabel[j]<<endl;
 					}
 					int k=q[vec[j]+nodeLabel[j]];
 					fout2 << vecLabel[j] << ":" << graph[k].new_id << " ";

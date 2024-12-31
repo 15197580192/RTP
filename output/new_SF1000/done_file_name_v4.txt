@@ -1,0 +1,45 @@
+./output/new_SF1000/new_output_relationships/hasTag.txt
+connected components number:101
+./output/new_SF1000/new_output_relationships/hasTag.txt
+./output/new_SF1000/new_output_relationships/studyAt.txt
+connected components number:524
+./output/new_SF1000/new_output_relationships/studyAt.txt
+./output/new_SF1000/new_output_relationships/hasCreator.txt
+connected components number:1461
+./output/new_SF1000/new_output_relationships/hasCreator.txt
+./output/new_SF1000/new_output_relationships/isLocatedIn.txt
+connected components number:1366
+./output/new_SF1000/new_output_relationships/isLocatedIn.txt
+./output/new_SF1000/new_output_relationships/hasInterest.txt
+connected components number:52
+./output/new_SF1000/new_output_relationships/hasInterest.txt
+./output/new_SF1000/new_output_relationships/isSubclassOf.txt
+connected components number:1
+./output/new_SF1000/new_output_relationships/isSubclassOf.txt
+./output/new_SF1000/new_output_relationships/likes.txt
+connected components number:1
+./output/new_SF1000/new_output_relationships/likes.txt
+./output/new_SF1000/new_output_relationships/replyOf.txt
+connected components number:14460
+./output/new_SF1000/new_output_relationships/replyOf.txt
+./output/new_SF1000/new_output_relationships/containerOf.txt
+connected components number:12617
+./output/new_SF1000/new_output_relationships/containerOf.txt
+./output/new_SF1000/new_output_relationships/hasMember.txt
+connected components number:1
+./output/new_SF1000/new_output_relationships/hasMember.txt
+./output/new_SF1000/new_output_relationships/knows.txt
+connected components number:1
+./output/new_SF1000/new_output_relationships/knows.txt
+./output/new_SF1000/new_output_relationships/isPartOf.txt
+connected components number:6
+./output/new_SF1000/new_output_relationships/isPartOf.txt
+./output/new_SF1000/new_output_relationships/hasType.txt
+connected components number:62
+./output/new_SF1000/new_output_relationships/hasType.txt
+./output/new_SF1000/new_output_relationships/workAt.txt
+connected components number:73
+./output/new_SF1000/new_output_relationships/workAt.txt
+./output/new_SF1000/new_output_relationships/hasModerator.txt
+connected components number:1528
+./output/new_SF1000/new_output_relationships/hasModerator.txt

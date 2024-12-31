@@ -10,7 +10,7 @@ typedef pair<int, int> PII;
 
 struct Con_Com {
 	int bh, cnt;
-} cc[25710000];
+} cc[32254];
 
 struct Region {
     int bh;
@@ -21,35 +21,35 @@ struct Region {
 vector<vector<int>> partition_component;
 vector<vector<int>> partition_node_component;
 vector<vector<int>> id_list;
-int partition_number_cnt[9][282640000];
-int partition_bool[9][282640000];
-int partition_cnt = 8;
+int partition_number_cnt[7][327588];
+int partition_bool[7][327588];
+int partition_cnt = 6;
 
-int new_property_num[] = {6, 4, 8, 3, 8, 3, 3, 4};
+int new_property_num[] = {4, 3, 3, 4, 3, 6, 10, 8};
 
 int judge_label(int node_id) {
-	if (node_id >= 0 && node_id <= 220096051) {
+	if (node_id >= 0 && node_id <= 1459) {
 		return 0;
 	}
-	if (node_id >= 220096052 && node_id <= 220097511) {
+	if (node_id >= 1460 && node_id <= 15209) {
 		return 1;
 	}
-	if (node_id >= 220097512 && node_id <= 220546137) {
+	if (node_id >= 15210 && node_id <= 15280) {
 		return 2;
 	}
-	if (node_id >= 220546138 && node_id <= 220546208) {
+	if (node_id >= 15281 && node_id <= 23235) {
 		return 3;
 	}
-	if (node_id >= 220546209 && node_id <= 278533231) {
+	if (node_id >= 23236 && node_id <= 39315) {
 		return 4;
 	}
-	if (node_id >= 278533232 && node_id <= 282613835) {
+	if (node_id >= 39316 && node_id <= 190358) {
 		return 5;
 	}
-	if (node_id >= 282613836 && node_id <= 282629915) {
+	if (node_id >= 190359 && node_id <= 191886) {
 		return 6;
 	}
-	if (node_id >= 282629916 && node_id <= 282637870) {
+	if (node_id >= 191887&& node_id <= 327587) {
 		return 7;
 	}
 	return 0;
@@ -88,7 +88,7 @@ void Stringsplit(string str, const char split,vector<string>& res)
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-	ifstream fin("/sys/fs/cgroup/new_SF100/connected_size_all_v4.txt");
+	ifstream fin("./output/new_SF1000/connected_size_all_v4.txt");
 	int conn_cnt = 0, bh, num, tcnt;
 	// fin >> conn_cnt;
     
@@ -104,7 +104,7 @@ int main() {
     long long threshold = total_cost / partition_cnt;
 	sort(cc, cc + conn_cnt, cmp);
 
-    ifstream fin1("/sys/fs/cgroup/new_SF100/region_component_v4.txt");
+    ifstream fin1("./output/new_SF1000/region_component_v4.txt");
 	string line;
 	int pcnt = 0;
     vector<int> tini;
@@ -133,7 +133,7 @@ int main() {
     }
     string origin_str = "";
     for (int i = 0; i < partition_cnt; i++) {
-        for (int j = 0; j < 282640000; j++) {
+        for (int j = 0; j < 327588; j++) {
             partition_number_cnt[i][j] = 0;
             partition_bool[i][j] = 0;
         }
@@ -208,9 +208,9 @@ int main() {
     duration = end - start;
 
     start = std::chrono::high_resolution_clock::now();
-    string fout_name = "/sys/fs/cgroup/new_SF100/partition_result_all_" + to_string(partition_cnt);
+    string fout_name = "./output/new_SF1000/partition_result_all_" + to_string(partition_cnt);
     fout_name = fout_name + "_v2.txt";
-    string fout1_name = "/sys/fs/cgroup/new_SF100/region_node_component_" + to_string(partition_cnt);
+    string fout1_name = "./output/new_SF1000/region_node_component_" + to_string(partition_cnt);
     fout1_name = fout1_name + "_v2.txt";
 	fout.open(fout_name);
     fout1.open(fout1_name);
