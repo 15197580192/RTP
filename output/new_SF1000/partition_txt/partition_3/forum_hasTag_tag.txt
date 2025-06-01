@@ -1,7 +1,0 @@
-type:hasTag id:453076 Forum.id:5700 Tag.id:24612 
-type:hasTag id:453077 Forum.id:5701 Tag.id:24612 
-type:hasTag id:453078 Forum.id:5702 Tag.id:24612 
-type:hasTag id:453079 Forum.id:5703 Tag.id:24612 
-type:hasTag id:453080 Forum.id:5704 Tag.id:24612 
-type:hasTag id:453081 Forum.id:5705 Tag.id:24612 
-type:hasTag id:453082 Forum.id:5706 Tag.id:24612 

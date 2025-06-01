@@ -1,2 +1,0 @@
-type:hasTag id:492614 Post.id:203286 Tag.id:24404 
-type:hasTag id:492615 Post.id:203287 Tag.id:24404 

@@ -258,11 +258,11 @@ void create_Connected(string filename) {
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-	fout.open("./output/new_SF1000/connected_size_all_v4.txt");
-	fout1.open("./output/new_SF1000/region_component_v4.txt");
-	fout2.open("./output/new_SF1000/done_file_name_v4.txt");
-	fout3.open("./output/new_SF1000/connected_label_v4.txt");
-	string file_path = "./output/new_SF1000/new_output_relationships";
+	fout.open("./output/new_SF0.1/connected_size_all_v4.txt");
+	fout1.open("./output/new_SF0.1/region_component_v4.txt");
+	fout2.open("./output/new_SF0.1/done_file_name_v4.txt");
+	fout3.open("./output/new_SF0.1/connected_label_v4.txt");
+	string file_path = "./output/new_SF0.1/new_output_relationships";
 	vector<string> my_file;
 	string need_extension = "txt";
 	get_need_file(file_path, my_file, need_extension);

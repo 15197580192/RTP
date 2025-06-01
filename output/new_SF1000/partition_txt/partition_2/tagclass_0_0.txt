@@ -1,7 +1,0 @@
-label:tagclass id:15272 name:Country url:http://dbpedia.org/ontology/Country 
-label:tagclass id:15224 name:SoccerManager url:http://dbpedia.org/ontology/SoccerManager 
-label:tagclass id:15213 name:Thing url:http://www.w3.org/2002/07/owl#Thing 
-label:tagclass id:15261 name:Criminal url:http://dbpedia.org/ontology/Criminal 
-label:tagclass id:15242 name:MemberOfParliament url:http://dbpedia.org/ontology/MemberOfParliament 
-label:tagclass id:15275 name:ComicsCharacter url:http://dbpedia.org/ontology/ComicsCharacter 
-label:tagclass id:15226 name:Athlete url:http://dbpedia.org/ontology/Athlete 

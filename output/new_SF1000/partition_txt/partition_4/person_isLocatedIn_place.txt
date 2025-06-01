@@ -1,4 +1,0 @@
-type:isLocatedIn id:1094798 Person.id:190592 Place.id:905 
-type:isLocatedIn id:1095008 Person.id:190802 Place.id:981 
-type:isLocatedIn id:1095430 Person.id:191224 Place.id:1383 
-type:isLocatedIn id:1095826 Person.id:191620 Place.id:981 

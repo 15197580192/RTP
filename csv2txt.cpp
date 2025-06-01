@@ -72,9 +72,9 @@ int main() {
 	get_need_file(file_path, my_file, "csv");
 
 	ofstream fout1;//nodes
-	fout1.open("./output/new_SF1000/new_output_nodes.txt");// nodepath
+	fout1.open("./output/new_SF0.1/new_output_nodes.txt");// nodepath
 	ofstream fout2;//relationship
-	fout2.open("./output/new_SF1000/new_output_relationships.txt");// relationpath
+	fout2.open("./output/new_SF0.1/new_output_relationships.txt");// relationpath
 
 	vector<item> graph;
 	string s;
@@ -151,7 +151,7 @@ int main() {
 			int pos3 = relationship_type.find("_", pos2 + 1);
 			relationship_type = relationship_type.substr(pos2 + 1, pos3 - pos2 - 1);
 			cout << "-----"<<relationship_type<<std::endl;
-			string output = "./output/new_SF1000/new_output_relationships/"; // relaitons path divided in parts
+			string output = "./output/new_SF0.1/new_output_relationships/"; // relaitons path divided in parts
 
 			ofstream fout;
 			fout.open(output.append(relationship_type).append(".txt"), ofstream::app);

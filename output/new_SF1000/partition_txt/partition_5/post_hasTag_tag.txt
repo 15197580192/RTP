@@ -1,1 +1,0 @@
-type:hasTag id:518984 Post.id:261755 Tag.id:24283 

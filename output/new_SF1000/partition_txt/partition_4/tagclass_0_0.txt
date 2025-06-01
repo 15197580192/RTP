@@ -1,4 +1,0 @@
-label:tagclass id:15268 name:Single url:http://dbpedia.org/ontology/Single 
-label:tagclass id:15220 name:Writer url:http://dbpedia.org/ontology/Writer 
-label:tagclass id:15222 name:President url:http://dbpedia.org/ontology/President 
-label:tagclass id:15227 name:SoccerPlayer url:http://dbpedia.org/ontology/SoccerPlayer 
