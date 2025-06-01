@@ -60,7 +60,7 @@ std::string toLowercase(std::string str) {
 }
 
 int main(){
-    ifstream fin1("./output/new_SF1000/partition_result_all_6_v2.txt");
+    ifstream fin1("./output/new_SF0.1/partition_result_all_6_v2.txt");
     string line;
     int line_cnt = 0;
     while(getline(fin1, line)){
@@ -83,7 +83,7 @@ int main(){
         conn_list.push_back(cc_id);
     }
 
-    ifstream fin2("./output/new_SF1000/connected_label_v4.txt");
+    ifstream fin2("./output/new_SF0.1/connected_label_v4.txt");
     string cc_line;
     label_list.push_back("NULL");
     while(getline(fin2, cc_line)){
@@ -96,7 +96,7 @@ int main(){
         label_list.push_back(cc_label);
     }
 
-    ifstream fin3("./output/new_SF1000/region_component_v4.txt");
+    ifstream fin3("./output/new_SF0.1/region_component_v4.txt");
     string node_line;
     int cc_cnt = 0;
     vector<int> tini;
@@ -116,7 +116,7 @@ int main(){
 	connected_component_list.push_back(node_id);
     }
 
-    ifstream fin4("./output/new_SF1000/new_output_relationships.txt");
+    ifstream fin4("./output/new_SF0.1/new_output_relationships.txt");
     string r_line;
     long long r_cnt = 0;
     while (getline(fin4, r_line)) {
@@ -125,7 +125,7 @@ int main(){
     }
 
     int now_partition_id = 0;
-    string file_path = "./output/new_SF1000/new_output_relationships";
+    string file_path = "./output/new_SF0.1/new_output_relationships";
     vector<string> my_file, file_list;
 	string need_extension = "txt";
 	get_need_file(file_path, my_file, need_extension);
@@ -171,7 +171,7 @@ int main(){
                     label2 = tline.substr(0, pos);
                     label1 = toLowercase(label1);
                     label2 = toLowercase(label2);
-                    string fout_name = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + label1 + "_" + file_list[i] + "_" + label2 + ".txt";
+                    string fout_name = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + label1 + "_" + file_list[i] + "_" + label2 + ".txt";
                     tout1.open(fout_name);
                     has_init = 1;
                 }
@@ -189,7 +189,7 @@ int main(){
                     out_file_cnt++;
                     label1 = tlabel1;
                     label2 = tlabel2;
-                    string fout_name = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + label1 + "_" + file_list[i] + "_" + label2 + ".txt";
+                    string fout_name = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + label1 + "_" + file_list[i] + "_" + label2 + ".txt";
                     if (out_file_cnt == 2) {
                         tout2.open(fout_name);
                     }

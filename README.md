@@ -6,8 +6,11 @@ relationship connectivity partitioning(RCP) is a edge-centric property graph par
 # Preprocessing
 This section outlines the steps and methodologies involved in preprocessing the data.
 ```
+# input preprocessing
 cp *.csv ./import
-mkdir -p ./output/new_SF1000/new_output_relationships
+# output preprocessing,please look to the file `output_dir.sh` and replace the `directory` with the exact directory name 
+cd output 
+bash output_dir.sh
 ```
 
 ## csv2txt.cpp

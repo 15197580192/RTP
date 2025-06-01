@@ -145,7 +145,7 @@ void node2Csv(string filename, int now_partition_id) {
     std::ifstream inFile(filename);
     string clear_filename = getFileName(filename);
 
-    string out_filename = "./output/new_SF1000/partition_csv/partition_" + to_string(now_partition_id) + "/" + clear_filename + ".csv";
+    string out_filename = "./output/new_SF0.1/partition_csv/partition_" + to_string(now_partition_id) + "/" + clear_filename + ".csv";
     std::ofstream outFile(out_filename);
 
     outFile.imbue(std::locale("C.UTF-8"));
@@ -182,7 +182,7 @@ void relationship2Csv(string filename, int now_partition_id) {
     std::ifstream inFile(filename);
     string clear_filename = getFileName(filename);
 
-    string out_filename = "./output/new_SF1000/partition_csv/partition_" + to_string(now_partition_id) + "/" + clear_filename + "_0_0.csv";
+    string out_filename = "./output/new_SF0.1/partition_csv/partition_" + to_string(now_partition_id) + "/" + clear_filename + "_0_0.csv";
     std::ofstream outFile(out_filename);
 
     std::string line;
@@ -220,7 +220,7 @@ void relationship2Csv(string filename, int now_partition_id) {
 
 int main() {
     for (int i = 0; i < 8; i++) {
-        string file_path = "./output/new_SF1000/partition_txt/partition_" + to_string(i);
+        string file_path = "./output/new_SF0.1/partition_txt/partition_" + to_string(i);
         vector<string> my_file;
         string need_extension = "txt";
         get_need_file(file_path, my_file, need_extension);

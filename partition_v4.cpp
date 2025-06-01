@@ -88,7 +88,7 @@ void Stringsplit(string str, const char split,vector<string>& res)
 int main() {
     auto start = std::chrono::high_resolution_clock::now();
 
-	ifstream fin("./output/new_SF1000/connected_size_all_v4.txt");
+	ifstream fin("./output/new_SF0.1/connected_size_all_v4.txt");
 	int conn_cnt = 0, bh, num, tcnt;
 	// fin >> conn_cnt;
     
@@ -104,7 +104,7 @@ int main() {
     long long threshold = total_cost / partition_cnt;
 	sort(cc, cc + conn_cnt, cmp);
 
-    ifstream fin1("./output/new_SF1000/region_component_v4.txt");
+    ifstream fin1("./output/new_SF0.1/region_component_v4.txt");
 	string line;
 	int pcnt = 0;
     vector<int> tini;
@@ -208,9 +208,9 @@ int main() {
     duration = end - start;
 
     start = std::chrono::high_resolution_clock::now();
-    string fout_name = "./output/new_SF1000/partition_result_all_" + to_string(partition_cnt);
+    string fout_name = "./output/new_SF0.1/partition_result_all_" + to_string(partition_cnt);
     fout_name = fout_name + "_v2.txt";
-    string fout1_name = "./output/new_SF1000/region_node_component_" + to_string(partition_cnt);
+    string fout1_name = "./output/new_SF0.1/region_node_component_" + to_string(partition_cnt);
     fout1_name = fout1_name + "_v2.txt";
 	fout.open(fout_name);
     fout1.open(fout1_name);

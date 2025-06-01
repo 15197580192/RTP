@@ -61,7 +61,7 @@ void get_need_file(const std::string& path, std::vector<std::string>& paths, con
 }
 
 int main(){
-    ifstream fin1("./output/new_SF1000/region_node_component_6_v2.txt");
+    ifstream fin1("./output/new_SF0.1/region_node_component_6_v2.txt");
     string line;
     int line_cnt = 0;
     while(getline(fin1, line)){
@@ -86,7 +86,7 @@ int main(){
     }
     cout << "line_cnt: " << line_cnt << endl;
 
-    ifstream fin2("./output/new_SF1000/new_output_nodes.txt");
+    ifstream fin2("./output/new_SF0.1/new_output_nodes.txt");
     string node_line;
     int node_cnt = 0;
     while(getline(fin2, node_line)){
@@ -106,14 +106,14 @@ int main(){
     
     while (now_partition_id < 6){
         ofstream fout0, fout1, fout2, fout3, fout4, fout5, fout6, fout7, fout8;
-        string fout_name0 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[0] + "_0_0.txt";
-        string fout_name1 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[1] + "_0_0.txt";
-        string fout_name2 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[2] + "_0_0.txt";
-        string fout_name3 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[3] + "_0_0.txt";
-        string fout_name4 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[4] + "_0_0.txt";
-        string fout_name5 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[5] + "_0_0.txt";
-        string fout_name6 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[6] + "_0_0.txt";
-        string fout_name7 = "./output/new_SF1000/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[7] + "_0_0.txt";
+        string fout_name0 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[0] + "_0_0.txt";
+        string fout_name1 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[1] + "_0_0.txt";
+        string fout_name2 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[2] + "_0_0.txt";
+        string fout_name3 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[3] + "_0_0.txt";
+        string fout_name4 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[4] + "_0_0.txt";
+        string fout_name5 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[5] + "_0_0.txt";
+        string fout_name6 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[6] + "_0_0.txt";
+        string fout_name7 = "./output/new_SF0.1/partition_txt/partition_" + to_string(now_partition_id) + "/" + file_label_list[7] + "_0_0.txt";
         fout0.open(fout_name0);
         fout1.open(fout_name1);
         fout2.open(fout_name2);
