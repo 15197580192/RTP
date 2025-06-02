@@ -602,7 +602,7 @@ void create_Connected(string filename) {
 			    cnt += new_property_num[judge_label(nodes_parent[i].second[j])];
                 cnt += getRelationshipsCost(nodes_parent[i].second[j], file_name_clear);
 		    }
-            fout << cnt << endl;
+            fout << cnt<< " "<<file_name_clear << endl;
 		    fout1 << endl;
 		    ccnt++;
         }
