@@ -17,35 +17,6 @@ using ll = long long;
 #include <algorithm>  // 用于 std::sort、std::set_intersection、std::unique
 #include <iterator>   // 用于 std::back_inserter
 
-// 模板函数：支持任意可比较的类型（int、long long、std::string 等）
-template <typename T>
-std::vector<T> getVectorIntersection(const std::vector<T>& vec1, const std::vector<T>& vec2) {
-    // 步骤1：创建临时副本（避免修改原始vector），并排序
-    std::vector<T> temp_vec1 = vec1;
-    std::vector<T> temp_vec2 = vec2;
-    std::sort(temp_vec1.begin(), temp_vec1.end());
-    std::sort(temp_vec2.begin(), temp_vec2.end());
-
-    // // 步骤2：对排序后的临时vector去重（可选，若不需要去重可删除此步骤）
-    // // std::unique 仅相邻重复元素，需先排序才能全局去重
-    // auto unique_end1 = std::unique(temp_vec1.begin(), temp_vec1.end());
-    // temp_vec1.erase(unique_end1, temp_vec1.end()); // 删除重复元素
-    // auto unique_end2 = std::unique(temp_vec2.begin(), temp_vec2.end());
-    // temp_vec2.erase(unique_end2, temp_vec2.end());
-
-    // 步骤3：存储交集结果
-    std::vector<T> intersection;
-
-    // 步骤4：调用 std::set_intersection 求有序集合的交集
-    std::set_intersection(
-        temp_vec1.begin(), temp_vec1.end(),
-        temp_vec2.begin(), temp_vec2.end(),
-        std::back_inserter(intersection) // 自动向结果vector尾部插入元素
-    );
-
-    return intersection;
-}
-
 struct Con_Com {
 	int bh, cnt;// 编号，cost
 } cc[81477047];
@@ -242,27 +213,6 @@ long long getGraphCost(string nodedir,string edgedir){
     }
     return cnt;
 }
-/**
- * @brief Get the Benefit
- * 
- * @param nodes1 
- * @param nodes2 
- * @return long long
- */
-long long getBenefit(vector<ll> nodes1,vector<ll> nodes2){
-    auto start = std::chrono::high_resolution_clock::now();
-    // 求点交集
-    vector<ll> cross=getVectorIntersection(nodes1,nodes2);
-    // 计算点属性和
-    ll cnt=0;
-    for(auto i:cross){
-        cnt+=new_property_num[judge_label(i)];
-    }
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double, std::milli> duration = end - start;
-    // if(duration.count()>1000) cout << "intersection time:" << duration.count() << " ms" << endl;
-    return cnt;
-}
 
 int main() {
     // 原图的cost
@@ -389,8 +339,6 @@ int main() {
         eth=LLONG_MAX;
         sort(re, re + partition_cnt, cmp1);// si倒序，cost升序
         for (int j = 0; j < partition_cnt; j++) {
-            // re[j].b=getBenefit(id_list[cc[i].bh],partition_node_component[re[j].bh]);
-            // re[j].b=rand()%(std::min(id_list[cc[i].bh].size(),partition_node_component[re[j].bh].size()));
             re[j].delta=cc[i].cnt-re[j].b;
             if(re[j].delta<=re[j].si){
                 if(re[j].b>maxBenefit){
