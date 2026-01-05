@@ -652,7 +652,6 @@ void create_Connected_transitive_v1(string filename) {
 }
 
 void create_Connected(string filename) {
-	ccnt=1;
     memset(node_cnt, 0 ,sizeof(node_cnt));
 	fout2 << filename << endl;
 	vector<PII> nodes_parent;
@@ -736,17 +735,20 @@ void create_Connected(string filename) {
     string file_name_clear = getFileName(file_name);
     for (ll i = 0; i < 29987835; i++) {// todo 点
         if (nodes_parent[i].second.size() > 1) {
-		    fout << ccnt << " ";
-		    fout1 << ccnt << ":";
-			fout3 << ccnt << ":" << filename << endl;
+		    // fout << ccnt << " ";
+		    // fout1 << ccnt << ":";
+			// fout3 << ccnt << ":" << filename << endl;
             long long cnt = 0;
+			set<ll> cc_nodes;
             for (ll j = 1; j < nodes_parent[i].second.size(); j++){
-			    fout1 << nodes_parent[i].second[j] << ",";
+			    // fout1 << nodes_parent[i].second[j] << ",";
+				cc_nodes.insert(nodes_parent[i].second[j]);
 			    cnt += new_property_num[judge_label(nodes_parent[i].second[j])];
                 cnt += getRelationshipsCost(nodes_parent[i].second[j], file_name_clear);
 		    }
-            fout << cnt<< " "<<file_name_clear << endl;
-		    fout1 << endl;
+			all_cc[filename].push(CC{ccnt,filename,cnt,cc_nodes});
+            // fout << cnt<< " "<<file_name_clear << endl;
+		    // fout1 << endl;
 		    ccnt++;
         }
     }
@@ -835,7 +837,7 @@ ll getAff(string l1,string l2){
 	ll res=0;
 	for(auto node:n1){
 		if(n2.find(node)!=n2.end()){
-			res+=judge_label(node);
+			res+=new_property_num[judge_label(node)];
 		}
 	}
 	return res;
@@ -877,11 +879,9 @@ int main() {
 	priority_queue<lpair> pq;
 	for(int i=0;i < my_file.size(); i++)
 	{	
-		if(my_file[i].find("knows")!=string::npos) continue;
 		string l1=my_file[i];
 		res_label.insert(l1);
 		for(int j=i+1;j < my_file.size(); j++){
-			if(my_file[j].find("knows")!=string::npos) continue;
 			string l2=my_file[j];
 			ll w=getAff(l1,l2);
 			if(w>0) pq.push(lpair{l1,l2,w});
@@ -912,7 +912,7 @@ int main() {
 	}
 	cout<<"------------------------------------------------------------"<<endl;
 	cout<<"final label:"<<endl;
-	ccnt=2;
+	ccnt=1;
 	for(auto label:res_label){
 		cout<<label<<endl;
 		auto q=all_cc[label];
