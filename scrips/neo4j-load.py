@@ -50,20 +50,23 @@ def get_queryans(sentence, nowIP):
 
 
 def get_result(sentence, nowIP):
-    # print("sentence:", sentence)
-    
-    print("nowIP:", nowIP)
-    ansList = get_queryans(sentence, nowIP)
-    # print(ansList)
-    resList = []
-    for ans in ansList:
-        resList.append(ans)
-        # print(ans['n'])
-    # for res in resList:
-    #     print(res)
-    print("reList: ", resList)
-    # print("reList's size: ", len(resList));
-    return str(resList)
+    try:
+        # print("sentence:", sentence)
+        
+        print("nowIP:", nowIP)
+        ansList = get_queryans(sentence, nowIP)
+        # print(ansList)
+        resList = []
+        for ans in ansList:
+            resList.append(ans)
+            # print(ans['n'])
+        # for res in resList:
+        #     print(res)
+        print("reList: ", resList)
+        # print("reList's size: ", len(resList));
+        return str(resList)
+    except Exception as e:
+        print(f"查询时发生错误：{str(e)}")
 
 def read_and_split_file(file_path, separator=";"):
     """
@@ -109,14 +112,14 @@ def read_and_split_file(file_path, separator=";"):
         print(f"读取文件时发生未知错误：{str(e)}")
         return []
 
-# nohup python -u neo4j-load.py >neo4j-load.log 2>&1 &
+# nohup python -u neo4j-load.py >>neo4j-load.log 2>&1 &
 if __name__ == "__main__":
     # 按分号分割文件内容
     result = read_and_split_file('/data1/hzy/RTP/scrips/build-ldbc.cypher')
     
     # 打印结果
     print("分割后的内容：")
-    for i in range(len(result)):
+    for i in range(0,len(result)):
         # 通过 result[i] 获取对应索引的元素
         sentence = result[i]
         print(f"{i}：{sentence}")
