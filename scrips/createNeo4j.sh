@@ -16,13 +16,13 @@ chmod 777 /data1/hzy/neo4j -R
 #   -e NEO4J_dbms_connector_bolt_listen__address=0.0.0.0:7687 \  # 允许外部访问 Bolt 端口
 #   swr.cn-north-4.myhuaweicloud.com/ddn-k8s/docker.io/neo4j:3.5.26
 docker run -itd \
-  --name neo4j-rtp7 \
-  -p 6107:7474 \
-  -p 6207:7687 \
-  -v /data1/hzy/neo4j/neo4j7/data:/data \
-  -v /data1/hzy/neo4j/neo4j7/import:/import \
-  -v /data1/hzy/neo4j/neo4j7/logs:/logs \
-  -v /data1/hzy/neo4j/neo4j7/plugins:/plugins \
+  --name neo4j-rtp0 \
+  -p 6100:7474 \
+  -p 6200:7687 \
+  -v /data1/hzy/neo4j/neo4j0/data:/data \
+  -v /data1/hzy/neo4j/neo4j0/import:/import \
+  -v /data1/hzy/neo4j/neo4j0/logs:/logs \
+  -v /data1/hzy/neo4j/neo4j0/plugins:/plugins \
   -e NEO4J_AUTH=neo4j/Neo4j@123456 \
   -e NEO4J_dbms_connector_http_listen__address=0.0.0.0:7474 \
   -e NEO4J_dbms_connector_bolt_listen__address=0.0.0.0:7687 \
@@ -36,11 +36,11 @@ http://10.157.197.82:6100/
 bolt://10.157.197.82:6200/
 
 #导数据
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_0/* /data1/hzy/neo4j/neo4j0/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_1/* /data1/hzy/neo4j/neo4j1/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_2/* /data1/hzy/neo4j/neo4j2/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_3/* /data1/hzy/neo4j/neo4j3/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_4/* /data1/hzy/neo4j/neo4j4/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_5/* /data1/hzy/neo4j/neo4j5/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_6/* /data1/hzy/neo4j/neo4j6/import
-cp /data1/hzy/RTP/output/new_SF10/partition_csv-v1/partition_7/* /data1/hzy/neo4j/neo4j7/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_0/* /data1/hzy/neo4j/neo4j0/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_1/* /data1/hzy/neo4j/neo4j1/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_2/* /data1/hzy/neo4j/neo4j2/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_3/* /data1/hzy/neo4j/neo4j3/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_4/* /data1/hzy/neo4j/neo4j4/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_5/* /data1/hzy/neo4j/neo4j5/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_6/* /data1/hzy/neo4j/neo4j6/import
+cp /data1/hzy/RTP/output/new_SF10/partition_csv-v2/partition_7/* /data1/hzy/neo4j/neo4j7/import
