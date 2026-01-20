@@ -1,0 +1,11 @@
+MATCH (start:Person {id: "933"}), (end:Person {id: "64877"}),
+      path = shortestPath((start)-[:knows*..15]-(end)) 
+RETURN nodes(path) as pathNodes
+
+MATCH (pA:Person{id: pA_id})<-[:hasCreator]-(m1:Comment)-[r:replyOf]-(m2:Post)-[:hasCreator]->(pB:Person{id: pB_id})
+WHERE m1.id IS NOT NULL AND m2.id IS NOT NULL
+RETURN DISTINCT m1.id,m2.id
+
+MATCH (pA:Person{id: pA_id})<-[:hasCreator]-(m1:Comment)-[r:replyOf]-(m2:Comment)-[:hasCreator]->(pB:Person{id: pB_id})
+WHERE m1.id IS NOT NULL AND m2.id IS NOT NULL
+RETURN DISTINCT m1.id,m2.id

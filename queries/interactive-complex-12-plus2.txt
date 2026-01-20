@@ -1,0 +1,23 @@
+MATCH (tag:Tag)-[:hasType|isSubclassOf*0..]->(baseTagClass:Tagclass)
+WHERE tag.id = "29967333" OR baseTagClass.id = "5"
+return tag
+
+MATCH (:Person {id: "933" })-[:knows*1..3]-(friend:Person)
+WITH friend
+ORDER BY friend.lastName
+RETURN friend
+LIMIT 20
+
+MATCH (friend:Person)<-[:hasCreator]-(comment:Comment)-[:replyOf]->(post:Post)-[:hasTag]->(tag:Tag)
+AND tag.id in tags
+RETURN
+    friend,comment,post,tag,
+    friend.id AS personId,
+    friend.firstName AS personFirstName,
+    friend.lastName AS personLastName,
+    count(DISTINCT comment) AS replyCount,
+    collect(DISTINCT tag.name) AS tagNames
+ORDER BY
+    replyCount DESC,
+    toInteger(personId) ASC
+LIMIT 20

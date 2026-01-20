@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,-z,stack-size=4294967296 -rdynamic CMakeFiles/ic14.dir/mpiQueryExecution_complex_14.cpp.o -o ic14  -Wl,-rpath,/usr/local/mpich/lib -lpython3.8 /usr/local/mpich/lib/libmpicxx.so /usr/local/mpich/lib/libmpi.so 

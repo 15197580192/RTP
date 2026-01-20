@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,-z,stack-size=4294967296 -rdynamic CMakeFiles/ic8p.dir/mpiQueryExecution_complex_8_plus.cpp.o -o ic8p  -Wl,-rpath,/usr/local/mpich/lib -lpython3.8 /usr/local/mpich/lib/libmpicxx.so /usr/local/mpich/lib/libmpi.so 

@@ -1,0 +1,5 @@
+MATCH (start:Person {id: "933"})<-[:hasCreator]-(message)<-[:replyOf*1..2]-(comment:Comment)-[:hasCreator]->(person:Person)
+RETURN
+    comment,person
+ORDER BY toInteger(comment.id) ASC
+LIMIT 20
