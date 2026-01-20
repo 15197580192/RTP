@@ -1,5 +1,5 @@
 # 1. 先在宿主机创建需要映射的目录（建议统一放在一个文件夹下，方便管理）,并添加权限
-mkdir -p /data1/hzy/neo4j/neo4j0/{data,import,logs,plugins}
+mkdir -p /data1/hzy/neo4j/neo4j0/{data,import,logs,plugins,conf}
 chmod 777 /data1/hzy/neo4j -R
 
 # 2. 启动 Neo4j 容器（替换其中的占位符）
@@ -11,6 +11,7 @@ chmod 777 /data1/hzy/neo4j -R
 #   -v /data1/hzy/neo4j/neo4j0/import:/import \      # 映射导入目录（导入数据用）
 #   -v /data1/hzy/neo4j/neo4j0/logs:/logs \          # 映射日志目录（查看运行日志）
 #   -v /data1/hzy/neo4j/neo4j0/plugins:/plugins \    # 映射插件目录（放扩展插件如APOC）
+#   -v /data1/hzy/neo4j/neo4j0/rtpplus/conf:/var/lib/neo4j/conf \  # 映射配置文件（修改pagecache和堆size等）
 #   -e NEO4J_AUTH=neo4j/你的密码 \      # 设置 Neo4j 初始密码（必须）
 #   -e NEO4J_dbms_connector_http_listen__address=0.0.0.0:7474 \  # 允许外部访问 HTTP 端口
 #   -e NEO4J_dbms_connector_bolt_listen__address=0.0.0.0:7687 \  # 允许外部访问 Bolt 端口
@@ -23,6 +24,7 @@ docker run -itd \
   -v /data1/hzy/neo4j/neo4j0/import:/import \
   -v /data1/hzy/neo4j/neo4j0/logs:/logs \
   -v /data1/hzy/neo4j/neo4j0/plugins:/plugins \
+  -v /data1/hzy/neo4j/neo4j0/rtpplus/conf:/var/lib/neo4j/conf \
   -e NEO4J_AUTH=neo4j/Neo4j@123456 \
   -e NEO4J_dbms_connector_http_listen__address=0.0.0.0:7474 \
   -e NEO4J_dbms_connector_bolt_listen__address=0.0.0.0:7687 \
