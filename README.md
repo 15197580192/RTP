@@ -1,4 +1,4 @@
-# RSP-query
+# RCP-query
 ## environment
 * python3
 * mpi
