@@ -47,7 +47,7 @@
 		     26G大小的文件时设置了200G内存
 		4、运行完成后会生成三个文件，其中一个是记录有分区信息的边集文件
 	    其余程序使用详情请看源代码github页面的说明
-	```java
+	```
 	// VGP/core/Edge.java
 	@Override
     public int compareTo(Object obj) {
@@ -63,8 +63,6 @@
         // return this.toString().compareTo(obj.toString()); //lexicographic order
         return -1;
     }
-	```
-	```
 	 IDEA 实现「Build 带 lib 依赖的 VGP.jar」（核心步骤）
 	你需要的是生成可执行的 VGP.jar + 自动复制依赖到 lib 文件夹（对应之前的 Build 说明），IDEA 需先配置「Artifact」，再执行 Build：
 	步骤 1：确认主类（包含 main 方法）
@@ -115,4 +113,4 @@
 	（6）中程序运行完后会生成各个分区的csv文件，分别放在对应的以数字命名的文件夹下。例如针对4个分区的情况，（6）中会生成4个文件夹到文件输出路径下，分别为0，1，2，3，代表4个分区
 	  每个文件夹下都是31个csv文件，其中存放着该分区下的所有点和边的信息。
 
-** 以上代码均建立在csv文件为标准格式（即每项之间以逗号分隔）上，86g的csv文件是以“|”分隔的，需要在每次遍历旧的csv文件时加上 row = row[0].split('|')做处理，目前所有代码我都加上了。如果后面又要处理标准格式的csv文件，在代码对应处删去row = row[0].split('|')即可
+** 以上代码均建立在csv文件是以“|”分隔的
