@@ -2,7 +2,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers       
 from 'file:///comment_0_0_new.csv' as csvline
 FIELDTERMINATOR '|'  
-merge (   
+create (   
 node:Comment{          
     id: csvline.id,
     creationDate: csvline.creationDate,
@@ -17,7 +17,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///forum_0_0.csv' as csvline
 FIELDTERMINATOR '|'  
-merge (
+create (
     node:Forum{
     id: csvline.id,
     title: csvline.title,
@@ -30,7 +30,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///organisation_0_0.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Organisation{
     id: csvline.id,
 type:csvline.type,
@@ -44,7 +44,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///person_0_0.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Person{
     id: csvline.id,
 firstName: csvline.firstName,
@@ -62,7 +62,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///place_0_0.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Place{
     id: csvline.id,
 name: csvline.name,
@@ -75,7 +75,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///post_0_0_new.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Post{
     id: csvline.id,
 imageFile: csvline.imageFile,
@@ -92,7 +92,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///tag_0_0.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Tag{
     id: csvline.id,
 name: csvline.name,
@@ -104,7 +104,7 @@ USING PERIODIC COMMIT 10000
 load csv with headers
 from 'file:///tagclass_0_0.csv' as csvline
 FIELDTERMINATOR '|' 
-merge (
+create (
 node:Tagclass{
     id: csvline.id,
 name: csvline.name,
