@@ -302,5 +302,5 @@ FROM "file:///tagclass_isSubclassOf_tagclass_0_0.csv" AS csvline
 FIELDTERMINATOR '|' 
 WITH csvline
 WHERE csvline[0] <> 'Tagclass.id'
-MERGE (tagclass1:Tagclass {id: csvline[0]}), (tagclass2:Tagclass {id: csvline[1]})
-CREATE (tagclass1)-[r:isSubclassOf]->(tagclass2);
+MATCH (tagclass1:Tagclass {id: csvline[0]}), (tagclass2:Tagclass {id: csvline[1]})
+MERGE (tagclass1)-[r:isSubclassOf]->(tagclass2);
