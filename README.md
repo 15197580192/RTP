@@ -23,7 +23,7 @@
 	NE:
 	     源代码地址为https://github.com/masatoshihanai/DistributedNE
 	     使用步骤：
-		1、进入到/data1/hzy/neo4j/partition_code/code/DistributedNE/build/目录下（fix:修改项目CMakeLists.txt为DistributedNE-CMakeLists.txt）
+		1、进入到/data1/hzy/neo4j/partition_code/code/NE/build/目录下（fix:修改项目CMakeLists.txt为DistributedNE-CMakeLists.txt）
 		2、运行命令mpirun -n <进程数> ./DistributedNE <边集文件地址> <分区数>，ps：进程数与分区数相等
 		3、运行完成后会生成一个记录有分区信息的边集文件，可能存放在程序目录内或者边集文件地址下
 	    其余程序使用详情请看源代码github页面的说明
