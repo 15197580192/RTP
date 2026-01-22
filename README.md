@@ -23,7 +23,7 @@
 	NE:
 	     源代码地址为https://github.com/masatoshihanai/DistributedNE
 	     使用步骤：
-		1、进入到/data1/hzy/neo4j/partition_code/code/DistributedNE/build/目录下
+		1、进入到/data1/hzy/neo4j/partition_code/code/DistributedNE/build/目录下（fix:修改项目CMakeLists.txt为DistributedNE-CMakeLists.txt）
 		2、运行命令mpirun -n <进程数> ./DistributedNE <边集文件地址> <分区数>，ps：进程数与分区数相等
 		3、运行完成后会生成一个记录有分区信息的边集文件，可能存放在程序目录内或者边集文件地址下
 	    其余程序使用详情请看源代码github页面的说明
@@ -32,7 +32,7 @@
 	Sheep：
 	    源代码地址https://github.com/dmargo/sheep
 	    使用步骤：
-		1、进入到/data1/hzy/neo4j/partition_code/code/sheep/目录下
+		1、进入到/data1/hzy/neo4j/partition_code/code/sheep/目录下(fix:lib/sequence.h添加头文件#include <cstring>)
 		2、运行命令./scripts/dist-partition.sh [options... -o 分区后的文件输出地址（文件前缀）] 边集文件地址 分区数
 		3、该程序分区后会输出多个文件，每个分区都是一个单独的边集文件，形如data0000、data0001、data0002......
 	    其余程序使用详情请看源代码github页面的说明
@@ -41,12 +41,63 @@
 	HDRF：
 	    源代码地址https://github.com/fabiopetroni/VGP
 	    使用步骤：
-		1、进入到/data1/hzy/neo4j/partition_code/code/VGP/目录下
+		1、进入到/data1/hzy/neo4j/partition_code/code/VGP/目录下(fix:直接使用code目录下VGP.jar替换VGP/dit目录底下VGP.jar，Edge的compareTo直接返回-1修复不同label边去重问题)
 		2、运行命令java -Xms128M -Xmx128M -jar dist/VGP.jar 边集文件地址 分区数 -algorithm hdrf -lambda 3 -threads 1 -output 分区后的文件输出地址
 		3、注意一定要通过-Xms和-Xmx选项去修改jvm运行时内存大小，否则读取边的速度在占用内存达到jvm限制时会变得非常慢，-Xms和-Xmx设置的内存大小最好大一点，我处理
 		     26G大小的文件时设置了200G内存
 		4、运行完成后会生成三个文件，其中一个是记录有分区信息的边集文件
 	    其余程序使用详情请看源代码github页面的说明
+	```java
+	// VGP/core/Edge.java
+	@Override
+    public int compareTo(Object obj) {
+        if (obj == null) {
+            System.out.println("ERROR: Edge.compareTo -> obj == null");
+            System.exit(-1);
+        }
+        if (getClass() != obj.getClass()) {
+            System.out.println("ERROR: Edge.compareTo -> getClass() != obj.getClass()");
+            System.exit(-1);
+        }
+        final Edge other = (Edge) obj;
+        // return this.toString().compareTo(obj.toString()); //lexicographic order
+        return -1;
+    }
+	```
+	```
+	 IDEA 实现「Build 带 lib 依赖的 VGP.jar」（核心步骤）
+	你需要的是生成可执行的 VGP.jar + 自动复制依赖到 lib 文件夹（对应之前的 Build 说明），IDEA 需先配置「Artifact」，再执行 Build：
+	步骤 1：确认主类（包含 main 方法）
+	先确保项目中有可运行的主类，且能正常运行：
+	打开包含 main 方法的类 → 右键 → Run 'XXX.main ()'（运行一次，生成运行配置）。
+	步骤 2：配置 Artifact（关键，对应「打包 JAR + 依赖」）
+	打开项目结构：顶部菜单栏 → File → Project Structure（快捷键：Ctrl + Alt + Shift + S/Cmd + ;）；
+	选择左侧「Artifacts」→ 点击右上角「+」→ 选择「JAR」→ 「From modules with dependencies...」；
+	在弹出的窗口中配置：
+	Main Class：点击下拉框，选择你的主类（比如 com.xxx.Main）；
+	JAR files from libraries：选择「Copy to the output directory and link via manifest」（核心！这会把依赖复制到 lib 文件夹，并在 MANIFEST.MF 中添加 Class-Path）；
+	Output directory：选择项目目录下的 dist 文件夹（比如 D:\your-project\dist）→ 点击「OK」；
+	回到 Artifacts 页面，确认：
+	右侧「Output Layout」中能看到你的主类和依赖的 JAR；
+	下方「Manifest file」会自动关联，且「Main Class」已填充。
+	步骤 3：执行 Build（生成 VGP.jar + lib 文件夹）
+	顶部菜单栏 → Build → Build Artifacts；
+	在弹出的列表中，找到你配置的 Artifact（比如 VGP:jar）→ 选择「Build」；
+	等待构建完成后，打开你指定的 dist 文件夹，会看到：
+	plaintext
+	dist/
+	├── VGP.jar       # 可执行主JAR（名字可在Artifact配置中修改）
+	└── lib/          # IDEA自动复制的依赖JAR（和你要的Build说明完全匹配）
+		├── xxx.jar
+		├── yyy.jar
+		└── ...
+	步骤 4：验证运行（和说明一致）
+	进入 dist 目录，执行命令：
+	bash
+	运行
+	java -jar VGP.jar
+	如果运行报错，大概率是依赖缺失，回到 Artifacts 配置页面，检查「Output Layout」是否包含所有依赖的 JAR。
+	```
 
 （5）分区后的边集文件
 	分区完成后都会有一个记录有分区信息的边集文件，其中Sheep需要调用脚本sheep_merge.py把所有分区文件合并成一个分区文件方便后续使用
