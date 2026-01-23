@@ -1,4 +1,4 @@
-MATCH (person:Person { id: "87095182" })-[:knows]-(otherPerson:Person)
+MATCH (person:Person { id: "13194139587300" })-[:knows]-(otherPerson:Person)
 WHERE
     person <> otherPerson
 RETURN otherPerson

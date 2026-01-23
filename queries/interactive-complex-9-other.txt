@@ -1,4 +1,4 @@
-MATCH (root:Person {id: "933" })-[:knows]-(friend:Person)
+MATCH (root:Person {id: "13194139587300" })-[:knows]-(friend:Person)
 WHERE NOT friend = root
 RETURN distinct friend
 

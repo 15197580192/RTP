@@ -1,11 +1,11 @@
-MATCH (person:Person {id: "933" })-[:knows]-(friend:Person)
+MATCH (person:Person {id: "13194139587300" })-[:knows]-(friend:Person)
 WHERE not(person=friend)
 RETURN DISTINCT friend
 
 MATCH (p:Person)-[:knows]-(friend:Person)
 RETURN DISTINCT friend
 
-MATCH (company:Organisation)-[:isLocatedIn]->(:Place {id: "79" })
+MATCH (company:Organisation)-[:isLocatedIn]->(:Place {id: "95" })
 RETURN company
 
 MATCH (friend:Person)-[workat:workAt]->(company:Organisation)

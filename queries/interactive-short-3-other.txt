@@ -1,4 +1,4 @@
-MATCH (n:Person {id: "933" })-[r:knows]-(friend)
+MATCH (n:Person {id: "29011" })-[r:knows]-(friend)
 WITH r, friend
 ORDER BY r.creationDate ASC
 RETURN

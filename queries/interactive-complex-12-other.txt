@@ -1,8 +1,8 @@
 MATCH (tag:Tag)-[:hasType]->(baseTagClass:Tagclass)
-WHERE tag.id = "211" OR baseTagClass.id = "211"
+WHERE tag.id = "9676" OR baseTagClass.id = "211"
 return tag
 
-MATCH (:Person {id: "933" })-[:knows]-(friend:Person)
+MATCH (:Person {id: "13194139587300" })-[:knows]-(friend:Person)
 RETURN friend
 
 MATCH (p:Person)-[:knows]-(friend:Person)

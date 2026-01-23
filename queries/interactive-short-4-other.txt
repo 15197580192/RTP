@@ -1,4 +1,4 @@
-MATCH (m:Comment {id: "7146825580623" })
+MATCH (m:Comment {id: "7696598189188" })
 RETURN
     m.creationDate as messageCreationDate,
     coalesce(m.content, m.imageFile) as messageContent

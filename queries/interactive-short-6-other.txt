@@ -1,4 +1,4 @@
-MATCH (m:Comment {id: "7146825580623" })-[:replyOf]->(p:Post)
+MATCH (m:Comment {id: "7696598189188" })-[:replyOf]->(p:Post)
 RETURN p
 
 MATCH (m:Post)-[:replyOf]->(p:Post)

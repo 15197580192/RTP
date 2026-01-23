@@ -1,10 +1,10 @@
-MATCH (person:Person {id: "933"})<-[:hasCreator]-(message:Comment)
+MATCH (person:Person {id: "29011"})<-[:hasCreator]-(message:Comment)
 RETURN message
 
-MATCH (person:Person {id: "933"})<-[:hasCreator]-(message:Post)
+MATCH (person:Person {id: "29011"})<-[:hasCreator]-(message:Post)
 RETURN message
 
-MATCH (person:Person {id: "933"})-[:knows]-(knowperson:Person)
+MATCH (person:Person {id: "29011"})-[:knows]-(knowperson:Person)
 RETURN knowperson
 
 MATCH (p:Person)-[:knows]-(knowperson:Person)

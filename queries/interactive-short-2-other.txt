@@ -1,4 +1,4 @@
-MATCH (:Person {id: "933"})<-[:hasCreator]-(message:Comment)
+MATCH (:Person {id: "2199023327886"})<-[:hasCreator]-(message:Comment)
 RETURN
  message.id AS messageId,
  message.creationDate AS messageCreationDate

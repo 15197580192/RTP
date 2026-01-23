@@ -470,7 +470,7 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"http://122.9.162.58:7474/", "http://116.63.178.28:7474/", "http://122.9.132.101:7474/", "http://139.9.233.77:7474/", "http://122.9.144.74:7474/", "http://116.63.188.96:7474/", "http://139.9.246.15:7474/", "http://116.63.183.28:7474/"};
+    vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
 
     string file_path = "./queries/interactive-complex-10-other.txt";
     string neo4jResult;

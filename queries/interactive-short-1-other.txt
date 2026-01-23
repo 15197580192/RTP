@@ -1,4 +1,4 @@
-MATCH (n:Person {id: "13778" })-[:isLocatedIn]->(p:Place)
+MATCH (n:Person {id: "29011" })-[:isLocatedIn]->(p:Place)
 RETURN
     n.firstName AS firstName,
     n.lastName AS lastName,

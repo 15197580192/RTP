@@ -1,4 +1,4 @@
-MATCH (person1:Person {id: "933"})-[:knows]-(person2:Person)
+MATCH (person1:Person {id: "13194139587300"})-[:knows]-(person2:Person)
 RETURN person2.id
 
 MATCH (person1:Person)-[:knows]-(person2:Person)

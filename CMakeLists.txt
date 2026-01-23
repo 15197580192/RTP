@@ -28,6 +28,7 @@ set(EXECUTABLE_TARGETS
     is1o     mpiQueryExecution_short_1-other.cpp
     is2     mpiQueryExecution_short_2.cpp
     is2p    mpiQueryExecution_short_2_plus.cpp
+    is2o    mpiQueryExecution_short_2-other.cpp
     is3     mpiQueryExecution_short_3.cpp
     is4     mpiQueryExecution_short_4.cpp
     is5     mpiQueryExecution_short_5.cpp
