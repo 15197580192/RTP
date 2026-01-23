@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,-z,stack-size=4294967296 -rdynamic "CMakeFiles/ic3o.dir/mpiQueryExecution_complex_3-other.cpp.o" -o ic3o  -Wl,-rpath,/usr/local/mpich/lib -lpython3.8 /usr/local/mpich/lib/libmpicxx.so /usr/local/mpich/lib/libmpi.so 

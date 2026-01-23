@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wl,-z,stack-size=4294967296 -rdynamic "CMakeFiles/is5o.dir/mpiQueryExecution_short_5-other.cpp.o" -o is5o  -Wl,-rpath,/usr/local/mpich/lib -lpython3.8 /usr/local/mpich/lib/libmpicxx.so /usr/local/mpich/lib/libmpi.so 
