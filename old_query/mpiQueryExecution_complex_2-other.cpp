@@ -387,7 +387,7 @@ int main(int argc, char** argv) {
 
                 // 显示或处理结果
                 for (int j = 0; j < results.size(); ++j) {
-                    // cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
+                    cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
                     if (results[j].length() == 2) {
                         continue;
                     }

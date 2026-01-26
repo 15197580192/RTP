@@ -1,8 +1,14 @@
-for ((i=0; i<=7; i++))
+for ((i=1; i<=7; i++))
 do
-    bash run.sh ./build/is$i
+    for j in {0..3}
+    do
+    bash run.sh ./build/is${i}o
+    done
 done
-for ((i=0; i<=14; i++))
+for ((i=1; i<=14; i++))
 do
-    bash run.sh ./build/ic$i
+    for j in {0..3}
+    do
+    bash run.sh ./build/ic${i}o
+    done
 done

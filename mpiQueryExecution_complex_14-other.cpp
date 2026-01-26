@@ -288,7 +288,12 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:9200/","bolt://10.157.197.82:9201/","bolt://10.157.197.82:9202/","bolt://10.157.197.82:9203/","bolt://10.157.197.82:9204/","bolt://10.157.197.82:9205/","bolt://10.157.197.82:9206/","bolt://10.157.197.82:9207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:36200/","bolt://10.157.197.82:36201/","bolt://10.157.197.82:36202/","bolt://10.157.197.82:36203/","bolt://10.157.197.82:36204/","bolt://10.157.197.82:36205/","bolt://10.157.197.82:36206/","bolt://10.157.197.82:36207/"};
+    vector<string> servers = {"bolt://10.157.197.82:46200/","bolt://10.157.197.82:46201/","bolt://10.157.197.82:46202/","bolt://10.157.197.82:46203/","bolt://10.157.197.82:46204/","bolt://10.157.197.82:46205/","bolt://10.157.197.82:46206/","bolt://10.157.197.82:46207/"};
 
     string file_path = "./queries/interactive-complex-14-other.txt";
     string neo4jResult;
@@ -414,7 +419,7 @@ int main(int argc, char** argv) {
             MPI_Barrier(MPI_COMM_WORLD);
             // cout << "节点 " << world_rank << " 离开i0同步墙" << endl;
         }
-        for (int T = 0; T < 4; T++) {
+        for (int T = 0; T < 2; T++) {
             if (T == 0) {
                 // MPI_Bcast(&nlist_length, 1, MPI_INT, 0, MPI_COMM_WORLD);
                 // // cout << "nlist_length: " << nlist_length << endl;
@@ -451,7 +456,8 @@ int main(int argc, char** argv) {
 
                     if (world_rank != 0) {
                         string new_query = str1 + "WHERE pA.id = " + v_nlist[T] + "\n" + str2;
-
+                        
+                        // cout << "new_query: " << new_query << endl;
                         auto now = chrono::system_clock::now();
                         auto duration_since_epoch = now.time_since_epoch();
                         auto seconds = chrono::duration_cast<chrono::seconds>(duration_since_epoch);
@@ -467,7 +473,6 @@ int main(int argc, char** argv) {
                     else {
                         string new_query = str1 + "WHERE pA.id = " + v_nlist[T] + "\n" + str2;
                         // cout << "节点 " << world_rank << endl;
-                        // cout << "new_query: " << new_query << endl;
                         // cout << "tid: " << tid << endl;
 
                         vector<string> results(world_size - 1);

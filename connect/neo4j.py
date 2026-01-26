@@ -66,5 +66,12 @@ def get_result(sentence, nowIP):
     return str(resList)
 
 if __name__ == "__main__":
-    sentence = "match (p:Person {id: \"933\"}) return p"
-    get_result(sentence, "bolt://139.9.250.196:7687/")
+    sentence = "MATCH (m) return m limit 10"
+    print(get_result(sentence, "bolt://10.157.197.82:36200/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36201/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36202/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36203/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36204/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36205/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36206/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36207/"))

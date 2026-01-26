@@ -34,6 +34,7 @@ set(EXECUTABLE_TARGETS
     is4     mpiQueryExecution_short_4.cpp
     is4o     mpiQueryExecution_short_4-other.cpp
     is5o     mpiQueryExecution_short_5-other.cpp
+    is5     mpiQueryExecution_short_5.cpp
     is6     mpiQueryExecution_short_6.cpp
     is6o     mpiQueryExecution_short_6-other.cpp
     is6p    mpiQueryExecution_short_6_plus.cpp
@@ -79,6 +80,7 @@ set(EXECUTABLE_TARGETS
     ic14    mpiQueryExecution_complex_14.cpp
     ic14o    mpiQueryExecution_complex_14-other.cpp
     ic14p   mpiQueryExecution_complex_14_plus.cpp
+    icknows  mpiQueryExecution_complex_0_knows.cpp
 )
 
 # 正确遍历成对元素：用while循环+列表弹出

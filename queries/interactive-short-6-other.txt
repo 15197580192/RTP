@@ -1,7 +1,7 @@
-MATCH (m:Comment {id: "7696598189188" })-[:replyOf]->(p:Post)
+MATCH (m:Comment {id: "7696598189188" })-[:replyOf]->(p:Comment)
 RETURN p
 
-MATCH (m:Post)-[:replyOf]->(p:Post)
+MATCH (m:Comment)-[:replyOf]->(p:Post)
 RETURN p
 
 MATCH (p:Post)<-[:containerOf]-(f:Forum)

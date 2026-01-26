@@ -1,0 +1,9 @@
+MATCH (p:Person {id: "29011"})-[:knows]-(friend:Person)
+WHERE NOT p=friend
+RETURN friend
+
+MATCH (friend:Person)-[:knows]-(otherPerson:Person)
+RETURN otherPerson
+
+MATCH (friend:Person)-[:knows]-(otherPerson:Person)
+RETURN otherPerson

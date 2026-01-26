@@ -1,7 +1,7 @@
-MATCH (m:Comment {id: "7696598189188" })<-[:replyOf]-(c:Comment)
+MATCH (m:Comment {id: "7696598189188" })-[:replyOf]-(c:Comment)
 RETURN c.id AS commentId, c.content AS commentContent, c.creationDate AS commentCreationDate
 
-MATCH (m:Comment)<-[:replyOf]-(c:Comment)
+MATCH (m:Comment)-[:replyOf]-(c:Comment)
 RETURN c.id AS commentId, c.content AS commentContent, c.creationDate AS commentCreationDate
 
 MATCH (c:Comment)-[:hasCreator]->(p:Person)

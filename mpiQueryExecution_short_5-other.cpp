@@ -16,7 +16,6 @@ using namespace std;
 vector<string> query_list;
 vector<string> query1_ans_list;
 vector<string> query2_ans_list;
-vector<string> query2Other_ans_list;
 
 struct Query1Result {
     string personId;
@@ -178,27 +177,27 @@ Query2Result parseQuery2Results(string data) {
     return q2;
 }
 
-bool cmp(Query2Result a, Query2Result b) {
-    return a.lastName < b.lastName;
-}
-
 void print(Query2Result q) {
     cout << "---------------------------------------" << endl;
     cout << "'personId': " << q.personId << ", 'firstName': " << q.firstName << ", 'lastName': " << q.lastName << endl;
 }
 
+
 int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:9200/","bolt://10.157.197.82:9201/","bolt://10.157.197.82:9202/","bolt://10.157.197.82:9203/","bolt://10.157.197.82:9204/","bolt://10.157.197.82:9205/","bolt://10.157.197.82:9206/","bolt://10.157.197.82:9207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:36200/","bolt://10.157.197.82:36201/","bolt://10.157.197.82:36202/","bolt://10.157.197.82:36203/","bolt://10.157.197.82:36204/","bolt://10.157.197.82:36205/","bolt://10.157.197.82:36206/","bolt://10.157.197.82:36207/"};
+    vector<string> servers = {"bolt://10.157.197.82:46200/","bolt://10.157.197.82:46201/","bolt://10.157.197.82:46202/","bolt://10.157.197.82:46203/","bolt://10.157.197.82:46204/","bolt://10.157.197.82:46205/","bolt://10.157.197.82:46206/","bolt://10.157.197.82:46207/"};
 
     string file_path = "./queries/interactive-short-5-other.txt";
     string neo4jResult;
     string tid = " ";
-    string tid1 = " ";
     int tid_length = 0;
-    int tid1_length = 0;
     vector<Query1Result> query1Results;
     vector<Query2Result> query2Results;
 
@@ -255,26 +254,46 @@ int main(int argc, char** argv) {
                     else {
                         vector<string> now_ans = getAnsList(results[j]);
                         for (int k = 0; k < now_ans.size(); k++) {
-                            query1_ans_list.push_back(now_ans[k]);
+                            query2_ans_list.push_back(now_ans[k]);
                         }
                     }
                 }
 
                 // cout << "query1_ans_list: " << query1_ans_list.size() << endl;
-                tid = "WHERE author.id IN [";
 
-                for (int j = 0; j < query1_ans_list.size(); j++) {
-                    Query1Result q1;
-                    q1 = parseQuery1Results(query1_ans_list[j]);
-                    query1Results.push_back(q1);
-                    if (j == 0) {
-                        tid = tid + q1.personId;
-                    }
-                    else {
-                        tid = tid + ", " + q1.personId;
-                    }
+                for (int j = 0; j < query2_ans_list.size(); j++) {
+                    Query2Result q1;
+                    q1 = parseQuery2Results(query2_ans_list[j]);
+                    query2Results.push_back(q1);
                 }
-                tid = tid + "]\n";
+
+                auto now = chrono::system_clock::now();
+                auto duration_since_epoch = now.time_since_epoch();
+                auto seconds = chrono::duration_cast<chrono::seconds>(duration_since_epoch);
+                auto milliseconds = chrono::duration_cast<chrono::milliseconds>(duration_since_epoch - seconds);
+                time_t now_time_t = chrono::system_clock::to_time_t(now);
+                tm* now_tm = localtime(&now_time_t);
+                fout << i << " " << world_rank << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
+                for (int i = 0; i < query2Results.size(); i++) {
+                    if(query2Results[i].firstName!="None")
+                        print(query2Results[i]);
+                }
+
+                // // cout << "query1_ans_list: " << query1_ans_list.size() << endl;
+                // tid = "WHERE author.id IN [";
+
+                // for (int j = 0; j < query1_ans_list.size(); j++) {
+                //     Query1Result q1;
+                //     q1 = parseQuery1Results(query1_ans_list[j]);
+                //     query1Results.push_back(q1);
+                //     if (j == 0) {
+                //         tid = tid + q1.personId;
+                //     }
+                //     else {
+                //         tid = tid + ", " + q1.personId;
+                //     }
+                // }
+                // tid = tid + "]\n";
             } else {
                 auto now = chrono::system_clock::now();
                 auto duration_since_epoch = now.time_since_epoch();
@@ -335,8 +354,8 @@ int main(int argc, char** argv) {
                 vector<string> results(world_size - 1);
                 // vector<string> results_1(8);
                 for (int j = 1; j < world_size; ++j) {
-                    char buffer[5000000];
-                    MPI_Recv(buffer, 5000000, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                    char buffer[16384];
+                    MPI_Recv(buffer, 16384, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                     results[j - 1] = string(buffer);
                     auto now = chrono::system_clock::now();
                     auto duration_since_epoch = now.time_since_epoch();
@@ -349,7 +368,7 @@ int main(int argc, char** argv) {
                 // cout << "------------------------" << endl;
                 // cout << "节点0 results.size: " << results.size() << endl;
                 for (int j = 0; j < results.size(); ++j) {
-                    // cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
+                    cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
                     if (results[j].length() == 2) {
                         continue;
                     }
@@ -363,48 +382,12 @@ int main(int argc, char** argv) {
 
                 // cout << "query2_ans_list: " << query2_ans_list.size() << endl;
 
-                tid1 = "WHERE person.id IN [";
-
                 for (int j = 0; j < query2_ans_list.size(); j++) {
                     Query2Result q2;
                     q2 = parseQuery2Results(query2_ans_list[j]);
                     query2Results.push_back(q2);
-                    if (j == 0) {
-                        tid1 = tid1 + q2.personId;
-                    }
-                    else {
-                        tid1 = tid1 + ", " + q2.personId;
-                    }
                 }
-                tid1 = tid1 + "]\n";
                 // cout << query2Results.size() << endl;
-            }
-
-            tid1_length = tid1.size();
-            // cout << "节点0的tid1_length: " << tid1_length << endl;
-            MPI_Bcast(&tid1_length, 1, MPI_INT, 0, MPI_COMM_WORLD);
-            tid1.resize(tid1_length);
-            MPI_Bcast(&tid1[0], tid1_length, MPI_CHAR, 0, MPI_COMM_WORLD);
-            // cout << "节点 " << world_rank << " 到达i1同步墙" << endl;
-            MPI_Barrier(MPI_COMM_WORLD);
-            // cout << "节点 " << world_rank << " 离开i1同步墙" << endl;
-        }
-        if (i == 2) {
-            int pos = query_list[i].find('\n');
-            string str1 = query_list[i].substr(0, pos + 1);
-            string str2 = query_list[i].substr(pos + 1);
-
-            MPI_Bcast(&tid1_length, 1, MPI_INT, 0, MPI_COMM_WORLD);
-            // cout << "tid1_length: " << tid1_length << endl;
-            if (world_rank != 0) {
-                // cout << "这不是0号节点" << endl;
-                // 调整字符串大小以适应接收的数据
-                tid1.resize(tid1_length);
-            }
-            MPI_Bcast(&tid1[0], tid1_length, MPI_CHAR, 0, MPI_COMM_WORLD);
-
-            if (world_rank != 0) {
-                string new_query = str1 + tid1 + str2;
 
                 auto now = chrono::system_clock::now();
                 auto duration_since_epoch = now.time_since_epoch();
@@ -413,75 +396,10 @@ int main(int argc, char** argv) {
                 time_t now_time_t = chrono::system_clock::to_time_t(now);
                 tm* now_tm = localtime(&now_time_t);
                 fout << i << " " << world_rank << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
-
-                string result = connect2Neo4j(new_query, servers[world_rank - 1]);
-                // cout << "节点 " << world_rank << " 向服务器ip " << servers[world_rank - 1] << " 发送信息" << endl;
-                MPI_Send(result.c_str(), result.size() + 1, MPI_CHAR, 0, 0, MPI_COMM_WORLD);
-            }
-            else {
-                string new_query = str1 + tid1 + str2;
-
-                vector<string> results(world_size - 1);
-                // vector<string> results_1(8);
-                for (int j = 1; j < world_size; ++j) {
-                    char buffer[6000000];
-                    MPI_Recv(buffer, 6000000, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
-                    results[j - 1] = string(buffer);
-                    auto now = chrono::system_clock::now();
-                    auto duration_since_epoch = now.time_since_epoch();
-                    auto seconds = chrono::duration_cast<chrono::seconds>(duration_since_epoch);
-                    auto milliseconds = chrono::duration_cast<chrono::milliseconds>(duration_since_epoch - seconds);
-                    time_t now_time_t = chrono::system_clock::to_time_t(now);
-                    tm* now_tm = localtime(&now_time_t);
-                    fout << i << " " << j << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
-                }
-                // cout << "------------------------" << endl;
-                // cout << "节点0 results.size: " << results.size() << endl;
-                for (int j = 0; j < results.size(); ++j) {
-                    // cout << "从节点 " << (j + 1) << " 收到的结果: " << results[j] << " " << results[j].length() << endl;
-                    if (results[j].length() == 2) {
-                        continue;
-                    }
-                    else {
-                        vector<string> now_ans = getAnsList(results[j]);
-                        for (int k = 0; k < now_ans.size(); k++) {
-                            query2Other_ans_list.push_back(now_ans[k]);
-                        }
-                    }
-                }
-
-                // cout << "query2Other_ans_list: " << query2Other_ans_list.size() << endl;
-
-                for (int j = 0; j < query2Other_ans_list.size(); j++) {
-                    Query2Result q2;
-                    q2 = parseQuery2Results(query2Other_ans_list[j]);
-                    bool flag = false;
-                    for (int k = 0; k < query2Results.size(); k++) {
-                        if (query2Results[k].personId == q2.personId) {
-                            flag = true;
-                            break;
-                        }
-                    }
-                    if (flag == false) {
-                        query2Results.push_back(q2);
-                    }
-                }
-                // cout << query2Results.size() << endl;
-
-                sort(query2Results.begin(), query2Results.end(), cmp);
-
-                auto now = chrono::system_clock::now();
-                auto duration_since_epoch = now.time_since_epoch();
-                auto seconds = chrono::duration_cast<chrono::seconds>(duration_since_epoch);
-                auto milliseconds = chrono::duration_cast<chrono::milliseconds>(duration_since_epoch - seconds);
-                time_t now_time_t = chrono::system_clock::to_time_t(now);
-                tm* now_tm = localtime(&now_time_t);
-                fout << i << " " << world_rank << " " << put_time(now_tm, "%Y-%m-%d %H:%M:%S") << '.' << setfill('0') << setw(3) << milliseconds.count() << endl;
-
+                std::cout<<query2Results.size()<<std::endl;
                 for (int j = 0; j < query2Results.size(); j++) {
-                    if (j < 20) {
-                       print(query2Results[j]);
-                    }
+                    if(query2Results[i].firstName.length()>0)
+                        print(query2Results[j]);
                 }
             }
 
@@ -501,7 +419,7 @@ int main(int argc, char** argv) {
     std::chrono::duration<double> elapsed = end - start;
 
     // 输出结果
-    std::cout << "Elapsed time: " << elapsed.count() << " seconds." << std::endl;
+    // std::cout << "Elapsed time: " << elapsed.count() << " seconds." << std::endl;
 
     return 0;
 }

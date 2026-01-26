@@ -8,6 +8,7 @@
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is4.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is4o.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is5o.dir
+/data1/hzy/neo4j/RTP-main/build/CMakeFiles/is5.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is6.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is6o.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/is6p.dir
@@ -53,5 +54,6 @@
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/ic14.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/ic14o.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/ic14p.dir
+/data1/hzy/neo4j/RTP-main/build/CMakeFiles/icknows.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/edit_cache.dir
 /data1/hzy/neo4j/RTP-main/build/CMakeFiles/rebuild_cache.dir

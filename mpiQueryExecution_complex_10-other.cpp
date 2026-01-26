@@ -470,7 +470,12 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:9200/","bolt://10.157.197.82:9201/","bolt://10.157.197.82:9202/","bolt://10.157.197.82:9203/","bolt://10.157.197.82:9204/","bolt://10.157.197.82:9205/","bolt://10.157.197.82:9206/","bolt://10.157.197.82:9207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+    // vector<string> servers = {"bolt://10.157.197.82:36200/","bolt://10.157.197.82:36201/","bolt://10.157.197.82:36202/","bolt://10.157.197.82:36203/","bolt://10.157.197.82:36204/","bolt://10.157.197.82:36205/","bolt://10.157.197.82:36206/","bolt://10.157.197.82:36207/"};
+    vector<string> servers = {"bolt://10.157.197.82:46200/","bolt://10.157.197.82:46201/","bolt://10.157.197.82:46202/","bolt://10.157.197.82:46203/","bolt://10.157.197.82:46204/","bolt://10.157.197.82:46205/","bolt://10.157.197.82:46206/","bolt://10.157.197.82:46207/"};
 
     string file_path = "./queries/interactive-complex-10-other.txt";
     string neo4jResult;
@@ -503,41 +508,43 @@ int main(int argc, char** argv) {
     string outfile_name = "file_time_" + to_string(world_rank);
     fout.open(outfile_name);
 
-    ifstream fin_id("know*1_3_id_list.txt");
+    ifstream fin_id("13194139587300_know*1_3_id_list.txt");
     string line;
     vector<Person> person_list;
     while (getline(fin_id, line)) {
         // cout << "line: " << line << endl;
         vector<string> tlist;
-        stringSplit(line, "' '", tlist);
+        stringSplit(line, "|", tlist);
         Person p;
         for (int i = 0; i < tlist.size(); i++) {
             if (i == 0) {
-                p.id = tlist[i] + "'";
+                p.id = tlist[i];
             }
             if (i == 1) {
-                p.firstName = "'" + tlist[i] + "'";
+                p.firstName = tlist[i] ;
             }
             if (i == 2) {
-                p.lastName = "'" + tlist[i] + "'";
+                p.lastName = tlist[i]  ;
             }
             if (i == 3) {
-                p.birthday = "'" + tlist[i] + "'";
+                p.birthday = tlist[i] ;
             }
             if (i == 4) {
                 // cout << tlist[i] << endl;
-                p.creationDate = "'" + tlist[i];
+                p.creationDate = tlist[i];
             }
         }
-        if (p.birthday.length() > 0) {
-            int tmonth = getMonth(p.birthday);
-            int tday = getDay(p.birthday);
-            if (tmonth == 5 && tday >= 21) {
-                person_list.push_back(p);
-            }
-        }
+        // if (p.birthday.length() > 0) {
+        //     int tmonth = getMonth(p.birthday);
+        //     int tday = getDay(p.birthday);
+        //     if (tmonth == 5 && tday >= 21) {
+        //         person_list.push_back(p);
+        //     }
+        // }
+        person_list.push_back(p);
         // person_list.push_back(line);
     }
+        
     cout << "person_list.size(): " << person_list.size() << endl;
 
     if (world_rank == 0) {
@@ -591,11 +598,11 @@ int main(int argc, char** argv) {
                 for (int j = 0; j < query1_ans_list.size(); j++) {
                     Query1Result q1;
                     q1 = parseQuery1Results(query1_ans_list[j]);
-                    int tmonth = getMonth(q1.friendPerson.birthday);
-                    int tday = getDay(q1.friendPerson.birthday);
-                    if (tmonth == 5 && tday >= 21) {
+                    // int tmonth = getMonth(q1.friendPerson.birthday);
+                    // int tday = getDay(q1.friendPerson.birthday);
+                    // if (tmonth == 5 && tday >= 21) {
                         query1Results.push_back(q1);
-                    }
+                    // }
                     if (j == 0) {
                         tid = tid + q1.friendPerson.id;
                     }

@@ -67,16 +67,16 @@ def get_result(sentence, nowIP):
 
 if __name__ == "__main__":
     # sentence = "MATCH (m:Comment{id:\"19968660\"})-[:hasCreator]->(p:Person) RETURN p"
-    # sentence = "MATCH (m:Comment)-[:hasCreator]->(p:Person) RETURN p"
-    sentence = "MATCH (n) return n limit 10"
+    # sentence = "MATCH (m)-[r]->(p) return m limit 10"
+    # sentence = "MATCH (n:Comment {id: \"7696598189188\" }) return n limit 10"
     # sentence = 'MATCH (person:Person {id: "13778"})-[:knows*2..3]-(friend) WHERE NOT friend=person AND      NOT (friend)-[:knows]-(person)	WITH friend	ORDER BY friend.creationDate DESC	RETURN DISTINCT friend	LIMIT 100'
-    # sentence = "MATCH (m:Post{id:'6054624'}) SET m.content='About Lleyton Hewitt,  Masters Cup titles (2001 and 2002). In 2005, About Terry Pratchett' return m"
-    print(get_result(sentence, "bolt://10.157.197.82:26200/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26201/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26202/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26203/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26204/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26205/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26206/"))
-    print(get_result(sentence, "bolt://10.157.197.82:26207/"))
+    sentence = "MATCH (m:Comment{id:'8246361067507'}) SET m.content='About Kingdom of Navarre_ _ French' return m"
+    print(get_result(sentence, "bolt://10.157.197.82:36200/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36201/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36202/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36203/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36204/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36205/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36206/"))
+    print(get_result(sentence, "bolt://10.157.197.82:36207/"))
     

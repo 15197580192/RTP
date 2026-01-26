@@ -777,7 +777,7 @@ int main(int argc, char** argv) {
 
                 for (int j = 0; j < query2Results.size(); j++) {
                     string now_id = query2Results[j].friendPerson.id;
-                    if (now_id == "933") {
+                    if (now_id == "29011") {
                         continue;
                     }
                     int flag = 0;
@@ -906,7 +906,7 @@ int main(int argc, char** argv) {
 
                     for (int j = 0; j < query3Results.size(); j++) {
                         string now_id = query3Results[j].friendPerson.id;
-                        if (now_id == "933") {
+                        if (now_id == "29011") {
                             continue;
                         }
                         int flag = 0;
