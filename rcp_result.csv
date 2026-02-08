@@ -1,0 +1,85 @@
+执行程序,查询结果,总共耗时(秒)
+./build/is1,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",2.775
+./build/is1,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",2.626
+./build/is1,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",2.449
+./build/is1,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",2.503
+./build/is2,"'messageId': 27412061, 'messageCreationDate': 1283153622631, 'messageContent': About Haile Selassie I_  a future golden age of etAbout Phil Spector_ Inter, 'postId': 76988379, 'personId': , 'personFirstName': , 'personLastName':",4.211
+./build/is2,"'messageId': 27412061, 'messageCreationDate': 1283153622631, 'messageContent': About Haile Selassie I_  a future golden age of etAbout Phil Spector_ Inter, 'postId': 76988379, 'personId': , 'personFirstName': , 'personLastName':",4.249
+./build/is2,"'messageId': 27412061, 'messageCreationDate': 1283153622631, 'messageContent': About Haile Selassie I_  a future golden age of etAbout Phil Spector_ Inter, 'postId': 76988379, 'personId': , 'personFirstName': , 'personLastName':",4.012
+./build/is2,"'messageId': 27412061, 'messageCreationDate': 1283153622631, 'messageContent': About Haile Selassie I_  a future golden age of etAbout Phil Spector_ Inter, 'postId': 76988379, 'personId': , 'personFirstName': , 'personLastName':",3.959
+./build/is3,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",2.624
+./build/is3,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",2.788
+./build/is3,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",2.599
+./build/is3,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",2.685
+./build/is4,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",2.494
+./build/is4,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",2.641
+./build/is4,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",2.472
+./build/is4,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",2.659
+./build/is5,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",2.985
+./build/is5,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",2.627
+./build/is5,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",2.888
+./build/is5,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",2.672
+./build/is6,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",4.240
+./build/is6,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",3.974
+./build/is6,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",3.952
+./build/is6,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",4.455
+./build/is7,"'commentId': '19968703', 'commentContent': 'thx', 'commentCreationDate': '1327884445513', 'replyAuthorId': '68648439', 'replyAuthorFirstName': 'Koji', 'replyAuthorLastName': 'Suzuki', 'replyAuthorKnowsOriginalMessageAuthor': true",9.183
+./build/is7,"'commentId': '19968703', 'commentContent': 'thx', 'commentCreationDate': '1327884445513', 'replyAuthorId': '68648439', 'replyAuthorFirstName': 'Koji', 'replyAuthorLastName': 'Suzuki', 'replyAuthorKnowsOriginalMessageAuthor': true",8.784
+./build/is7,"'commentId': '19968703', 'commentContent': 'thx', 'commentCreationDate': '1327884445513', 'replyAuthorId': '68648439', 'replyAuthorFirstName': 'Koji', 'replyAuthorLastName': 'Suzuki', 'replyAuthorKnowsOriginalMessageAuthor': true",8.303
+./build/is7,"'commentId': '19968703', 'commentContent': 'thx', 'commentCreationDate': '1327884445513', 'replyAuthorId': '68648439', 'replyAuthorFirstName': 'Koji', 'replyAuthorLastName': 'Suzuki', 'replyAuthorKnowsOriginalMessageAuthor': true",8.142
+./build/ic1,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Medway', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",281.659
+./build/ic1,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Medway', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",253.186
+./build/ic1,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Medway', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",237.507
+./build/ic1,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Medway', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",252.438
+./build/ic2,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '37030763', 'postOrCommentContent': 'roflol', 'postOrCommentCreationDate': '1347241222622'",2.708
+./build/ic2,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '37030763', 'postOrCommentContent': 'roflol', 'postOrCommentCreationDate': '1347241222622'",2.842
+./build/ic2,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '37030763', 'postOrCommentContent': 'roflol', 'postOrCommentCreationDate': '1347241222622'",2.685
+./build/ic2,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '37030763', 'postOrCommentContent': 'roflol', 'postOrCommentCreationDate': '1347241222622'",2.723
+./build/ic3,"'friendId': '68703564', 'friendFirstName': 'Houari', 'friendLastName': 'Abdelli', 'xCount': 0, 'yCount': 0, 'xyCount': 0",36.790
+./build/ic3,"'friendId': '68703564', 'friendFirstName': 'Houari', 'friendLastName': 'Abdelli', 'xCount': 0, 'yCount': 0, 'xyCount': 0",49.467
+./build/ic3,"'friendId': '68703564', 'friendFirstName': 'Houari', 'friendLastName': 'Abdelli', 'xCount': 0, 'yCount': 0, 'xyCount': 0",39.425
+./build/ic3,"'friendId': '68703564', 'friendFirstName': 'Houari', 'friendLastName': 'Abdelli', 'xCount': 0, 'yCount': 0, 'xyCount': 0",37.907
+./build/ic4,"'tagName': 'Robert_John_Mutt_Lange', 'postCount': 0",2.968
+./build/ic4,"'tagName': 'Robert_John_Mutt_Lange', 'postCount': 0",2.897
+./build/ic4,"'tagName': 'Robert_John_Mutt_Lange', 'postCount': 0",3.072
+./build/ic4,"'tagName': 'Robert_John_Mutt_Lange', 'postCount': 0",2.866
+./build/ic5,"'forumName': 'Album 8 of Albert Aa'), 'postCount': 19",822.404
+./build/ic5,"'forumName': 'Album 8 of Albert Aa'), 'postCount': 19",787.716
+./build/ic5,"'forumName': 'Album 8 of Albert Aa'), 'postCount': 19",811.877
+./build/ic5,"'forumName': 'Album 8 of Albert Aa'), 'postCount': 19",815.599
+./build/ic6,"'tagName': '1st_Born_Second', 'postCount': 0",3.705
+./build/ic6,"'tagName': '1st_Born_Second', 'postCount': 0",3.741
+./build/ic6,"'tagName': '1st_Born_Second', 'postCount': 0",4.134
+./build/ic6,"'tagName': '1st_Born_Second', 'postCount': 0",3.886
+./build/ic7,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",7.513
+./build/ic7,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",7.432
+./build/ic7,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",6.983
+./build/ic7,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",7.171
+./build/ic8,"'personId': '68631072', 'personFirstName': 'Denis', 'personLastName': 'Abrahams', 'commentCreationDate': '1336666267750', 'commentId': '3079046', 'commentContent': 'About Abraham Lincoln_ y_ and helping push through ConAbout Come Home with Me_ Diplomats_ '",4.295
+./build/ic8,"'personId': '68631072', 'personFirstName': 'Denis', 'personLastName': 'Abrahams', 'commentCreationDate': '1336666267750', 'commentId': '3079046', 'commentContent': 'About Abraham Lincoln_ y_ and helping push through ConAbout Come Home with Me_ Diplomats_ '",4.173
+./build/ic8,"'personId': '68631072', 'personFirstName': 'Denis', 'personLastName': 'Abrahams', 'commentCreationDate': '1336666267750', 'commentId': '3079046', 'commentContent': 'About Abraham Lincoln_ y_ and helping push through ConAbout Come Home with Me_ Diplomats_ '",4.141
+./build/ic8,"'personId': '68631072', 'personFirstName': 'Denis', 'personLastName': 'Abrahams', 'commentCreationDate': '1336666267750', 'commentId': '3079046', 'commentContent': 'About Abraham Lincoln_ y_ and helping push through ConAbout Come Home with Me_ Diplomats_ '",4.361
+./build/ic9,"'personId': '68756863', 'personFirstName': 'Azat', 'personLastName': 'Aab', 'commentOrPostId': '40133197', 'commentOrPostContent': 'LOL', 'commentOrPostCreationDate': '1347439645706'",2.843
+./build/ic9,"'personId': '68756863', 'personFirstName': 'Azat', 'personLastName': 'Aab', 'commentOrPostId': '40133197', 'commentOrPostContent': 'LOL', 'commentOrPostCreationDate': '1347439645706'",2.660
+./build/ic9,"'personId': '68756863', 'personFirstName': 'Azat', 'personLastName': 'Aab', 'commentOrPostId': '40133197', 'commentOrPostContent': 'LOL', 'commentOrPostCreationDate': '1347439645706'",2.813
+./build/ic9,"'personId': '68756863', 'personFirstName': 'Azat', 'personLastName': 'Aab', 'commentOrPostId': '40133197', 'commentOrPostContent': 'LOL', 'commentOrPostCreationDate': '1347439645706'",2.694
+./build/ic10,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",137.889
+./build/ic10,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",139.468
+./build/ic10,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",134.972
+./build/ic10,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",142.840
+./build/ic11,"'personId': '68695838', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 0",3.129
+./build/ic11,"'personId': '68695838', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 0",2.957
+./build/ic11,"'personId': '68695838', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 0",2.936
+./build/ic11,"'personId': '68695838', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 0",2.984
+./build/ic12,"'personId': '68648125', 'personFirstName': 'Willy', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 56",38.469
+./build/ic12,"'personId': '68648125', 'personFirstName': 'Willy', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 56",36.877
+./build/ic12,"'personId': '68648125', 'personFirstName': 'Willy', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 56",38.611
+./build/ic12,"'personId': '68648125', 'personFirstName': 'Willy', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 56",37.967
+./build/ic13,'shortestPathLength': 3,1.360
+./build/ic13,'shortestPathLength': 3,1.405
+./build/ic13,'shortestPathLength': 3,1.468
+./build/ic13,'shortestPathLength': 3,1.491
+./build/ic14,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 6",8.915
+./build/ic14,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 6",8.644
+./build/ic14,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 6",8.867
+./build/ic14,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 6",8.722

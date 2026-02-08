@@ -566,8 +566,8 @@ int main(int argc, char** argv) {
         //         vector<string> results(world_size - 1);
         //         // vector<string> results_1(8);
         //         for (int j = 1; j < world_size; ++j) {
-        //             char buffer[1581070];
-        //             MPI_Recv(buffer, 1581070, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+        //             char buffer[1595350];
+        //             MPI_Recv(buffer, 1595350, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
         //             results[j - 1] = string(buffer);
 
         //             auto now = chrono::system_clock::now();

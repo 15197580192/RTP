@@ -1,4 +1,4 @@
-MATCH (person:Person {id: "933"})-[:knows*2..3]-(friend)
+MATCH (person:Person {id: "68630179"})-[:knows*2..3]-(friend)
 WHERE NOT friend=person AND
       NOT (friend)-[:knows]-(person)
 WITH friend
@@ -9,7 +9,7 @@ LIMIT 100
 MATCH (friend:Person)-[:isLocatedIn]->(city:Place)
 RETURN friend, city
 
-MATCH (tag:Tag)<-[:hasInterest]-(person:Person {id: "13778"})
+MATCH (tag:Tag)<-[:hasInterest]-(person:Person {id: "68630179"})
 RETURN tag
 
 OPTIONAL MATCH (friend)<-[:hasCreator]-(post:Post)

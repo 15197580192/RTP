@@ -1,4 +1,4 @@
-MATCH (m:Comment {id:  "1649267497738" })-[:hasCreator]->(p:Person)
+MATCH (m:Comment {id:  "32985384721536" })-[:hasCreator]->(p:Person)
 RETURN
     p.id AS personId,
     p.firstName AS firstName,

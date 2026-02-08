@@ -350,7 +350,7 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
+    vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
 
     string file_path = "./queries/interactive-complex-6.txt";
     string neo4jResult;
@@ -566,8 +566,8 @@ int main(int argc, char** argv) {
                 vector<string> results(world_size - 1);
                 // vector<string> results_1(8);
                 for (int j = 1; j < world_size; ++j) {
-                    char buffer[1581070];
-                    MPI_Recv(buffer, 1581070, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
+                    char buffer[1595350];
+                    MPI_Recv(buffer, 1595350, MPI_CHAR, j, 0, MPI_COMM_WORLD, MPI_STATUS_IGNORE);
                     results[j - 1] = string(buffer);
 
                     auto now = chrono::system_clock::now();

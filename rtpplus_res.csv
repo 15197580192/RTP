@@ -1,0 +1,253 @@
+执行程序,查询结果,总共耗时(秒)
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.308
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.260
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.168
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.199
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",3.835
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.194
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.473
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.145
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.324
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.169
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.216
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.162
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.279
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.189
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.175
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.189
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.264
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.193
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.166
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.194
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.193
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.043
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.183
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.079
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.329
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.165
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.309
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.363
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",1149.115
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",241.518
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",248.098
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",238.268
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",190.448
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.221
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.273
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.459
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",106.590
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",49.105
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",39.904
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",45.612
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.334
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.201
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.116
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.296
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",990.531
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",58.357
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",58.003
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",56.344
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",323.130
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.803
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.808
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",3.031
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",17.868
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.359
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.232
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.496
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",2.508
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.155
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.196
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.182
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.365
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.038
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.149
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.095
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",6711.720
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",171.284
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",171.844
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",179.309
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.277
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.150
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.269
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.214
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",271.870
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.695
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.955
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.373
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.154
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.206
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.207
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.111
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",214.437
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",3.043
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.889
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.944
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.155
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.189
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.169
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",1.193
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.187
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.258
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.172
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.176
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.135
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.152
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.113
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",1.211
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.209
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.261
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.183
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.199
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.382
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.204
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.240
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",1.250
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.139
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.210
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.195
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",1.996
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.263
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.160
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.114
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.178
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",230.942
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",230.666
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",227.283
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",225.234
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.144
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.101
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.093
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",2.146
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",34.973
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",35.740
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",35.447
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",48.583
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.063
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",1.971
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.033
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",2.153
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",54.960
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",55.659
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",53.569
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",54.254
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.883
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.824
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",3.026
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.865
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.321
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.360
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.319
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",5.017
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.191
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.183
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.181
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",1.155
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.117
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.206
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.213
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",2.148
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",184.907
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",169.911
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",177.467
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",170.019
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.100
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.149
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.133
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",2.137
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",26.759
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.965
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.215
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.012
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.144
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.160
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.188
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,1.210
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.862
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.899
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.861
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",3.072
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",0.870
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",0.838
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",0.849
+/data1/hzy/neo4j/RTP-main/build/is1p,"'firstName': 'Mahinda', 'lastName': 'Perera', 'birthday': '628646400000', 'locationIP': '119.235.7.103', 'browserUsed': 'Firefox', 'cityId': '88773575', 'gender': 'male', 'creationDate': '1266161530447'",0.817
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",1.289
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",0.862
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",0.898
+/data1/hzy/neo4j/RTP-main/build/is2p,"'messageId': 26733678, 'messageCreationDate': 1342485496306, 'messageContent': good, 'postId': 76794427, 'personId': 68696360, 'personFirstName': Zbigniew, 'personLastName': Nowak",0.875
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",0.925
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",0.863
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",0.822
+/data1/hzy/neo4j/RTP-main/build/is3p,"'personId': '68794454', 'firstName': 'Marek', 'lastName': 'Zabłocki', 'friendshipCreationDate': '0'",0.862
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.884
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.809
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.822
+/data1/hzy/neo4j/RTP-main/build/is4p,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.906
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",0.908
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",0.879
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",0.898
+/data1/hzy/neo4j/RTP-main/build/is5p,"'personId': '68732189', 'firstName': 'Manuel', 'lastName': 'Rios'",0.865
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",1.474
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",1.320
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",1.305
+/data1/hzy/neo4j/RTP-main/build/is6p,"'forumId': '67581925', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '68679760', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",1.357
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",5.125
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",4.551
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",4.496
+/data1/hzy/neo4j/RTP-main/build/is7p,"'commentId': '19968695', 'commentContent': 'I see', 'commentCreationDate': '1327884537091', 'replyAuthorId': '68723828', 'replyAuthorFirstName': 'Jack', 'replyAuthorLastName': 'Thomas', 'replyAuthorKnowsOriginalMessageAuthor': true",4.484
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",213.710
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",208.130
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",208.593
+/data1/hzy/neo4j/RTP-main/build/ic1p,"'friendId': '68650950', 'friendLastName': 'Aa', 'friendBirthday': '402278400000', 'friendCreationDate': '1310317356242', 'friendGender': 'male', 'friendBrowserUsed': 'Chrome', 'friendLocationIp': '81.247.36.40', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Brussels', 'friendUniversities': [['Université_catholique_de_Louvain', '0', 'Ottignies-Louvain-la-Neuve']], 'friendCompanies': []",208.687
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",1.669
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",1.448
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",1.409
+/data1/hzy/neo4j/RTP-main/build/ic2p,"'personId': '68765052', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'postOrCommentId': '42966067', 'postOrCommentContent': 'About Patricia Tarabini_ hest singles', 'postOrCommentCreationDate': '1337942768724'",1.402
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",59.140
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",52.003
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",48.402
+/data1/hzy/neo4j/RTP-main/build/ic3p,"'friendId': '68702079', 'friendFirstName': 'Louis', 'friendLastName': 'Aa', 'xCount': -1, 'yCount': -1, 'xyCount': -1",49.226
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",1.445
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",1.424
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",1.421
+/data1/hzy/neo4j/RTP-main/build/ic4p,"'tagName': 'Lleyton_Hewitt', 'postCount': 0",1.433
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",80.010
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",62.512
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",60.974
+/data1/hzy/neo4j/RTP-main/build/ic5p,"'forumName': 'Album 24 of Louis Aa'), 'postCount': 18",77.136
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",2.219
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",1.917
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",1.886
+/data1/hzy/neo4j/RTP-main/build/ic6p,"'tagName': '12_Memories', 'postCount': 0",1.933
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",4.776
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",4.081
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",4.143
+/data1/hzy/neo4j/RTP-main/build/ic7p,"'personId': '68633216', 'personFirstName': 'Charles', 'personLastName': 'Smith', 'likeCreationDate': '0', 'commentOrPostId': '69743481', 'commentOrPostContent': 'About Imelda Marcos_ ios Visitasion RoAbout Leon Trotsky_ never rehabilitatAbout Isaac Hayes_ ries South Park. A', 'minutesLatency': -87776688, 'isNew': true",4.060
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",0.863
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",0.894
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",0.870
+/data1/hzy/neo4j/RTP-main/build/ic8p,"'personId': '68675030', 'personFirstName': 'Jerzy', 'personLastName': 'Borchardt', 'commentCreationDate': '1313579421570', 'commentId': '1', 'commentContent': 'thanks'",0.850
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",1.644
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",1.446
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",1.488
+/data1/hzy/neo4j/RTP-main/build/ic9p,"'personId': '68789118', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'commentOrPostId': '88000837', 'commentOrPostContent': 'About Robert John Mutt Lange_ o album_ Born This Way. He also wrote a song called Who Are You_ which will', 'commentOrPostCreationDate': '1347278617880'",1.463
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",175.633
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",185.590
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",168.402
+/data1/hzy/neo4j/RTP-main/build/ic10p,"'personId': '68744073', 'personFirstName': 'Rudolf', 'personLastName': 'Bauer', 'commonInterestScore': -1, 'personGender': 'male', 'personCityName': 'Ilmenau'",183.185
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",1.678
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",1.440
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",1.442
+/data1/hzy/neo4j/RTP-main/build/ic11p,"'personId': '68637883', 'personFirstName': 'Yang', 'personLastName': 'Zhou', 'organizationName': 'Tianjin_Airlines', 'organizationWorkFromYear': 0",1.469
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",25.094
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",23.490
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",23.576
+/data1/hzy/neo4j/RTP-main/build/ic12p,"'personId': '68761663', 'personFirstName': 'Paul', 'personLastName': 'Aa', 'tagNames': null, 'replyCount': 0",24.035
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,0.839
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,0.796
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,0.841
+/data1/hzy/neo4j/RTP-main/build/ic13p,'shortestPathLength': 3,0.827
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",2.295
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",1.934
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",1.904
+/data1/hzy/neo4j/RTP-main/build/ic14p,"'pathNodes': ['68630179', '68725265', '68721168', '68633674'], 'pathWeight': 13.5",1.880

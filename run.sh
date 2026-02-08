@@ -15,13 +15,14 @@ fi
 
 # 从命令行参数中获取 MPI 程序路径
 MPI_PROGRAM="$1"
+PORT_PRE="$2"
 
 # 统计并输出执行时间
 echo "执行程序：$MPI_PROGRAM"
 start_time=$(date +%s%3N)  # 获取当前时间戳，精确到毫秒（毫秒表示）
 
 # 捕获 mpirun 输出（标准输出和标准错误都捕获）
-mpi_output=$(mpirun -np $NP $MPI_PROGRAM 2>&1)
+mpi_output=$(mpirun -np $NP $MPI_PROGRAM $PORT_PRE 2>&1)
 
 end_time=$(date +%s%3N)  # 获取当前时间戳，精确到毫秒
 

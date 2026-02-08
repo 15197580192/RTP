@@ -1,0 +1,103 @@
+执行程序,查询结果,总共耗时(秒)
+/data1/hzy/neo4j/RTP-main/build/is1o,"'firstName': 'Jie', 'lastName': 'Xu', 'birthday': '357523200000', 'locationIP': '1.2.14.168', 'browserUsed': 'Internet Explorer', 'cityId': '495', 'gender': 'male', 'creationDate': '1265592912378'",2.974
+/data1/hzy/neo4j/RTP-main/build/is1o,"'firstName': 'Jie', 'lastName': 'Xu', 'birthday': '357523200000', 'locationIP': '1.2.14.168', 'browserUsed': 'Internet Explorer', 'cityId': '495', 'gender': 'male', 'creationDate': '1265592912378'",1.329
+/data1/hzy/neo4j/RTP-main/build/is1o,"'firstName': 'Jie', 'lastName': 'Xu', 'birthday': '357523200000', 'locationIP': '1.2.14.168', 'browserUsed': 'Internet Explorer', 'cityId': '495', 'gender': 'male', 'creationDate': '1265592912378'",1.339
+/data1/hzy/neo4j/RTP-main/build/is1o,"'firstName': 'Jie', 'lastName': 'Xu', 'birthday': '357523200000', 'locationIP': '1.2.14.168', 'browserUsed': 'Internet Explorer', 'cityId': '495', 'gender': 'male', 'creationDate': '1265592912378'",1.330
+/data1/hzy/neo4j/RTP-main/build/is2o,"'messageId': '21990350844025', 'messageCreationDate': '1319528085180', 'messageContent': 'About Charles V', 'postId': '21990350844012', 'personId': '19791209343744', 'personFirstName': 'David', 'personLastName': 'Alcalde'",3.941
+/data1/hzy/neo4j/RTP-main/build/is2o,"'messageId': '21990350844025', 'messageCreationDate': '1319528085180', 'messageContent': 'About Charles V', 'postId': '21990350844012', 'personId': '19791209343744', 'personFirstName': 'David', 'personLastName': 'Alcalde'",4.129
+/data1/hzy/neo4j/RTP-main/build/is2o,"'messageId': '21990350844025', 'messageCreationDate': '1319528085180', 'messageContent': 'About Charles V', 'postId': '21990350844012', 'personId': '19791209343744', 'personFirstName': 'David', 'personLastName': 'Alcalde'",4.195
+/data1/hzy/neo4j/RTP-main/build/is2o,"'messageId': '21990350844025', 'messageCreationDate': '1319528085180', 'messageContent': 'About Charles V', 'postId': '21990350844012', 'personId': '19791209343744', 'personFirstName': 'David', 'personLastName': 'Alcalde'",4.431
+/data1/hzy/neo4j/RTP-main/build/is3o,"'personId': '158923', 'firstName': 'Zbigniew', 'lastName': 'Kaczmarek', 'friendshipCreationDate': '1265737461046'",1.741
+/data1/hzy/neo4j/RTP-main/build/is3o,"'personId': '158923', 'firstName': 'Zbigniew', 'lastName': 'Kaczmarek', 'friendshipCreationDate': '1265737461046'",1.763
+/data1/hzy/neo4j/RTP-main/build/is3o,"'personId': '158923', 'firstName': 'Zbigniew', 'lastName': 'Kaczmarek', 'friendshipCreationDate': '1265737461046'",1.666
+/data1/hzy/neo4j/RTP-main/build/is3o,"'personId': '158923', 'firstName': 'Zbigniew', 'lastName': 'Kaczmarek', 'friendshipCreationDate': '1265737461046'",1.585
+/data1/hzy/neo4j/RTP-main/build/is4o,,1.687
+/data1/hzy/neo4j/RTP-main/build/is4o,,1.453
+/data1/hzy/neo4j/RTP-main/build/is4o,,1.460
+/data1/hzy/neo4j/RTP-main/build/is4o,,1.451
+/data1/hzy/neo4j/RTP-main/build/is5o,,1.427
+/data1/hzy/neo4j/RTP-main/build/is5o,,1.611
+/data1/hzy/neo4j/RTP-main/build/is5o,,1.552
+/data1/hzy/neo4j/RTP-main/build/is5o,,1.747
+/data1/hzy/neo4j/RTP-main/build/is6o,,3.884
+/data1/hzy/neo4j/RTP-main/build/is6o,,3.979
+/data1/hzy/neo4j/RTP-main/build/is6o,,4.103
+/data1/hzy/neo4j/RTP-main/build/is6o,,3.893
+/data1/hzy/neo4j/RTP-main/build/is7o,,5.356
+/data1/hzy/neo4j/RTP-main/build/is7o,,5.768
+/data1/hzy/neo4j/RTP-main/build/is7o,,5.134
+/data1/hzy/neo4j/RTP-main/build/is7o,,5.558
+/data1/hzy/neo4j/RTP-main/build/ic1o,"'friendId': '97873', 'friendLastName': ""Glazer-Ta'asa"", 'friendBirthday': '481593600000', 'friendCreationDate': '1266145398687', 'friendGender': 'male', 'friendBrowserUsed': 'Firefox', 'friendLocationIp': '109.74.33.122', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Luanda', 'friendUniversities': [['Queen_Arwa_University', '2006', ""Sana'a""]], 'friendCompanies': [[null]]",6.134
+/data1/hzy/neo4j/RTP-main/build/ic1o,"'friendId': '97873', 'friendLastName': ""Glazer-Ta'asa"", 'friendBirthday': '481593600000', 'friendCreationDate': '1266145398687', 'friendGender': 'male', 'friendBrowserUsed': 'Firefox', 'friendLocationIp': '109.74.33.122', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Luanda', 'friendUniversities': [['Queen_Arwa_University', '2006', ""Sana'a""]], 'friendCompanies': [[null]]",5.157
+/data1/hzy/neo4j/RTP-main/build/ic1o,"'friendId': '97873', 'friendLastName': ""Glazer-Ta'asa"", 'friendBirthday': '481593600000', 'friendCreationDate': '1266145398687', 'friendGender': 'male', 'friendBrowserUsed': 'Firefox', 'friendLocationIp': '109.74.33.122', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Luanda', 'friendUniversities': [['Queen_Arwa_University', '2006', ""Sana'a""]], 'friendCompanies': [[null]]",5.153
+/data1/hzy/neo4j/RTP-main/build/ic1o,"'friendId': '97873', 'friendLastName': ""Glazer-Ta'asa"", 'friendBirthday': '481593600000', 'friendCreationDate': '1266145398687', 'friendGender': 'male', 'friendBrowserUsed': 'Firefox', 'friendLocationIp': '109.74.33.122', 'friendEmails': None, 'friendLanguages': None, 'friendCityName': 'Luanda', 'friendUniversities': [['Queen_Arwa_University', '2006', ""Sana'a""]], 'friendCompanies': [[null]]",5.325
+/data1/hzy/neo4j/RTP-main/build/ic2o,"'personId': '998', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '35184515313495', 'postOrCommentContent': 'thanks', 'postOrCommentCreationDate': '1347373179735'",3.107
+/data1/hzy/neo4j/RTP-main/build/ic2o,"'personId': '998', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '35184515313495', 'postOrCommentContent': 'thanks', 'postOrCommentCreationDate': '1347373179735'",2.109
+/data1/hzy/neo4j/RTP-main/build/ic2o,"'personId': '998', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '35184515313495', 'postOrCommentContent': 'thanks', 'postOrCommentCreationDate': '1347373179735'",2.024
+/data1/hzy/neo4j/RTP-main/build/ic2o,"'personId': '998', 'personFirstName': 'Carlos', 'personLastName': 'Abarca', 'postOrCommentId': '35184515313495', 'postOrCommentContent': 'thanks', 'postOrCommentCreationDate': '1347373179735'",2.036
+/data1/hzy/neo4j/RTP-main/build/ic3o,"'friendId': '2199023288416', 'friendFirstName': 'Jack', 'friendLastName': 'Thomas', 'xCount': 0, 'yCount': 0, 'xyCount': 0",9.543
+/data1/hzy/neo4j/RTP-main/build/ic3o,"'friendId': '2199023288416', 'friendFirstName': 'Jack', 'friendLastName': 'Thomas', 'xCount': 0, 'yCount': 0, 'xyCount': 0",7.017
+/data1/hzy/neo4j/RTP-main/build/ic3o,"'friendId': '2199023288416', 'friendFirstName': 'Jack', 'friendLastName': 'Thomas', 'xCount': 0, 'yCount': 0, 'xyCount': 0",7.441
+/data1/hzy/neo4j/RTP-main/build/ic3o,"'friendId': '2199023288416', 'friendFirstName': 'Jack', 'friendLastName': 'Thomas', 'xCount': 0, 'yCount': 0, 'xyCount': 0",8.216
+/data1/hzy/neo4j/RTP-main/build/ic4o,"'tagName': 'Rupert_Murdoch', 'postCount': 0",2.092
+/data1/hzy/neo4j/RTP-main/build/ic4o,"'tagName': 'Rupert_Murdoch', 'postCount': 0",2.070
+/data1/hzy/neo4j/RTP-main/build/ic4o,"'tagName': 'Rupert_Murdoch', 'postCount': 0",1.965
+/data1/hzy/neo4j/RTP-main/build/ic4o,"'tagName': 'Rupert_Murdoch', 'postCount': 0",2.018
+/data1/hzy/neo4j/RTP-main/build/ic5o,"'forumName': 'Wall of Fekri Al Alhouthi'), 'postCount': 0",106.787
+/data1/hzy/neo4j/RTP-main/build/ic5o,"'forumName': 'Wall of Fekri Al Alhouthi'), 'postCount': 0",84.031
+/data1/hzy/neo4j/RTP-main/build/ic5o,"'forumName': 'Wall of Fekri Al Alhouthi'), 'postCount': 0",80.553
+/data1/hzy/neo4j/RTP-main/build/ic5o,"'forumName': 'Wall of Fekri Al Alhouthi'), 'postCount': 0",80.136
+/data1/hzy/neo4j/RTP-main/build/ic7o,"'personId': '19791209453818', 'personFirstName': 'Sergio', 'personLastName': 'Martinez', 'likeCreationDate': '1345059681161', 'commentOrPostId': '30786460402258', 'commentOrPostContent': 'About Imelda Marcos', 'minutesLatency': 4734720, 'isNew': true",3.991
+/data1/hzy/neo4j/RTP-main/build/ic7o,"'personId': '19791209453818', 'personFirstName': 'Sergio', 'personLastName': 'Martinez', 'likeCreationDate': '1345059681161', 'commentOrPostId': '30786460402258', 'commentOrPostContent': 'About Imelda Marcos', 'minutesLatency': 4734720, 'isNew': true",4.231
+/data1/hzy/neo4j/RTP-main/build/ic7o,"'personId': '19791209453818', 'personFirstName': 'Sergio', 'personLastName': 'Martinez', 'likeCreationDate': '1345059681161', 'commentOrPostId': '30786460402258', 'commentOrPostContent': 'About Imelda Marcos', 'minutesLatency': 4734720, 'isNew': true",3.984
+/data1/hzy/neo4j/RTP-main/build/ic7o,"'personId': '19791209453818', 'personFirstName': 'Sergio', 'personLastName': 'Martinez', 'likeCreationDate': '1345059681161', 'commentOrPostId': '30786460402258', 'commentOrPostContent': 'About Imelda Marcos', 'minutesLatency': 4734720, 'isNew': true",4.261
+/data1/hzy/neo4j/RTP-main/build/ic8o,"'personId': '13194139648543', 'personFirstName': 'Rahul', 'personLastName': 'Kumar', 'commentCreationDate': '1336620844463', 'commentId': '30786460402231', 'commentContent': 'About Suffragette City'",5.088
+/data1/hzy/neo4j/RTP-main/build/ic8o,"'personId': '13194139648543', 'personFirstName': 'Rahul', 'personLastName': 'Kumar', 'commentCreationDate': '1336620844463', 'commentId': '30786460402231', 'commentContent': 'About Suffragette City'",5.370
+/data1/hzy/neo4j/RTP-main/build/ic8o,"'personId': '13194139648543', 'personFirstName': 'Rahul', 'personLastName': 'Kumar', 'commentCreationDate': '1336620844463', 'commentId': '30786460402231', 'commentContent': 'About Suffragette City'",5.106
+/data1/hzy/neo4j/RTP-main/build/ic8o,"'personId': '13194139648543', 'personFirstName': 'Rahul', 'personLastName': 'Kumar', 'commentCreationDate': '1336620844463', 'commentId': '30786460402231', 'commentContent': 'About Suffragette City'",5.022
+/data1/hzy/neo4j/RTP-main/build/ic9o,"'personId': '17592186121176', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'commentOrPostId': '32985532030421', 'commentOrPostContent': 'photo32985532030421.jpg', 'commentOrPostCreationDate': '1347038263941'",2.027
+/data1/hzy/neo4j/RTP-main/build/ic9o,"'personId': '17592186121176', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'commentOrPostId': '32985532030421', 'commentOrPostContent': 'photo32985532030421.jpg', 'commentOrPostCreationDate': '1347038263941'",1.895
+/data1/hzy/neo4j/RTP-main/build/ic9o,"'personId': '17592186121176', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'commentOrPostId': '32985532030421', 'commentOrPostContent': 'photo32985532030421.jpg', 'commentOrPostCreationDate': '1347038263941'",1.870
+/data1/hzy/neo4j/RTP-main/build/ic9o,"'personId': '17592186121176', 'personFirstName': 'Timo', 'personLastName': 'Aaltonen', 'commentOrPostId': '32985532030421', 'commentOrPostContent': 'photo32985532030421.jpg', 'commentOrPostCreationDate': '1347038263941'",1.988
+/data1/hzy/neo4j/RTP-main/build/ic10o,"'personId': '90611', 'personFirstName': 'Isabel', 'personLastName': 'Cruz', 'commonInterestScore': 38, 'personGender': 'female', 'personCityName': 'Tacloban'",27.495
+/data1/hzy/neo4j/RTP-main/build/ic10o,"'personId': '90611', 'personFirstName': 'Isabel', 'personLastName': 'Cruz', 'commonInterestScore': 38, 'personGender': 'female', 'personCityName': 'Tacloban'",25.865
+/data1/hzy/neo4j/RTP-main/build/ic10o,"'personId': '90611', 'personFirstName': 'Isabel', 'personLastName': 'Cruz', 'commonInterestScore': 38, 'personGender': 'female', 'personCityName': 'Tacloban'",26.805
+/data1/hzy/neo4j/RTP-main/build/ic10o,"'personId': '90611', 'personFirstName': 'Isabel', 'personLastName': 'Cruz', 'commonInterestScore': 38, 'personGender': 'female', 'personCityName': 'Tacloban'",25.585
+/data1/hzy/neo4j/RTP-main/build/ic11o,"'personId': '24189255982068', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 2007",3.323
+/data1/hzy/neo4j/RTP-main/build/ic11o,"'personId': '24189255982068', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 2007",2.850
+/data1/hzy/neo4j/RTP-main/build/ic11o,"'personId': '24189255982068', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 2007",2.934
+/data1/hzy/neo4j/RTP-main/build/ic11o,"'personId': '24189255982068', 'personFirstName': 'Mariana', 'personLastName': 'Alves', 'organizationName': 'Grand_China_Air', 'organizationWorkFromYear': 2007",2.737
+/data1/hzy/neo4j/RTP-main/build/ic12o,,170.968
+/data1/hzy/neo4j/RTP-main/build/ic12o,,168.176
+/data1/hzy/neo4j/RTP-main/build/ic12o,,210.645
+/data1/hzy/neo4j/RTP-main/build/ic12o,,168.345
+/data1/hzy/neo4j/RTP-main/build/ic13o,,22.464
+/data1/hzy/neo4j/RTP-main/build/ic13o,,21.750
+/data1/hzy/neo4j/RTP-main/build/ic13o,,21.633
+/data1/hzy/neo4j/RTP-main/build/ic13o,,21.584
+/data1/hzy/neo4j/RTP-main/build/ic14o,"'pathNodes': '68630179', '68725265', '68721168', '68633674', 'pathWeight': 0",6.963
+/data1/hzy/neo4j/RTP-main/build/ic14o,"'pathNodes': '68630179', '68725265', '68721168', '68633674', 'pathWeight': 0",6.399
+/data1/hzy/neo4j/RTP-main/build/ic14o,"'pathNodes': '68630179', '68725265', '68721168', '68633674', 'pathWeight': 0",6.491
+/data1/hzy/neo4j/RTP-main/build/ic14o,"'pathNodes': '68630179', '68725265', '68721168', '68633674', 'pathWeight': 0",6.723
+/data1/hzy/neo4j/RTP-main/build/is4o,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.857
+/data1/hzy/neo4j/RTP-main/build/is4o,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",1.013
+/data1/hzy/neo4j/RTP-main/build/is4o,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.884
+/data1/hzy/neo4j/RTP-main/build/is4o,"'messageCreationDate': '1319287344031', 'messageContent': 'thanks'",0.840
+/data1/hzy/neo4j/RTP-main/build/is5o,"'personId': '24189255916560', 'firstName': 'Manuel', 'lastName': 'Rios'",0.883
+/data1/hzy/neo4j/RTP-main/build/is5o,"'personId': '24189255916560', 'firstName': 'Manuel', 'lastName': 'Rios'",0.787
+/data1/hzy/neo4j/RTP-main/build/is5o,"'personId': '24189255916560', 'firstName': 'Manuel', 'lastName': 'Rios'",0.842
+/data1/hzy/neo4j/RTP-main/build/is5o,"'personId': '24189255916560', 'firstName': 'Manuel', 'lastName': 'Rios'",0.883
+/data1/hzy/neo4j/RTP-main/build/is6o,"'forumId': '5291239', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '75612', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.452
+/data1/hzy/neo4j/RTP-main/build/is6o,"'forumId': '5291239', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '75612', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.351
+/data1/hzy/neo4j/RTP-main/build/is6o,"'forumId': '5291239', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '75612', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.250
+/data1/hzy/neo4j/RTP-main/build/is6o,"'forumId': '5291239', 'forumTitle': 'Wall of Koji Yamamoto', 'moderatorId': '75612', 'moderatorFirstName': 'Koji', 'moderatorLastName': 'Yamamoto'",2.149
+./build/is7o,"'commentId': '21990305681072', 'commentContent': 'thanks', 'commentCreationDate': '1319287344031', 'replyAuthorId': '4398046557715', 'replyAuthorFirstName': 'Chen', 'replyAuthorLastName': 'Chen', 'replyAuthorKnowsOriginalMessageAuthor': true",4.986
+./build/is7o,"'commentId': '21990305681072', 'commentContent': 'thanks', 'commentCreationDate': '1319287344031', 'replyAuthorId': '4398046557715', 'replyAuthorFirstName': 'Chen', 'replyAuthorLastName': 'Chen', 'replyAuthorKnowsOriginalMessageAuthor': true",5.110
+./build/is7o,"'commentId': '21990305681072', 'commentContent': 'thanks', 'commentCreationDate': '1319287344031', 'replyAuthorId': '4398046557715', 'replyAuthorFirstName': 'Chen', 'replyAuthorLastName': 'Chen', 'replyAuthorKnowsOriginalMessageAuthor': true",5.160
+./build/is7o,"'commentId': '21990305681072', 'commentContent': 'thanks', 'commentCreationDate': '1319287344031', 'replyAuthorId': '4398046557715', 'replyAuthorFirstName': 'Chen', 'replyAuthorLastName': 'Chen', 'replyAuthorKnowsOriginalMessageAuthor': true",4.986
+./build/ic12o,"'personId': '13194139689757', 'personFirstName': 'Vicente', 'personLastName': 'Gonzalez', 'tagNames': null, 'replyCount': 44",222.457
+./build/ic12o,"'personId': '13194139689757', 'personFirstName': 'Vicente', 'personLastName': 'Gonzalez', 'tagNames': null, 'replyCount': 44",218.821
+./build/ic12o,"'personId': '13194139689757', 'personFirstName': 'Vicente', 'personLastName': 'Gonzalez', 'tagNames': null, 'replyCount': 44",218.896
+./build/ic6o,"'tagName': 'Stephen_Harper', 'postCount': 124",3.899
+./build/ic6o,"'tagName': 'Stephen_Harper', 'postCount': 124",3.954
+./build/ic6o,"'tagName': 'Stephen_Harper', 'postCount': 124",3.889

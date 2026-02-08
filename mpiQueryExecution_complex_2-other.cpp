@@ -284,13 +284,26 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    // vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
-    // vector<string> servers = {"bolt://10.157.197.82:9200/","bolt://10.157.197.82:9201/","bolt://10.157.197.82:9202/","bolt://10.157.197.82:9203/","bolt://10.157.197.82:9204/","bolt://10.157.197.82:9205/","bolt://10.157.197.82:9206/","bolt://10.157.197.82:9207/"};
-    // vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
-    vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
+// vector<string> servers = {"bolt://10.157.197.82:26200/","bolt://10.157.197.82:26201/","bolt://10.157.197.82:26202/","bolt://10.157.197.82:26203/","bolt://10.157.197.82:26204/","bolt://10.157.197.82:26205/","bolt://10.157.197.82:26206/","bolt://10.157.197.82:26207/"};
     // vector<string> servers = {"bolt://10.157.197.82:36200/","bolt://10.157.197.82:36201/","bolt://10.157.197.82:36202/","bolt://10.157.197.82:36203/","bolt://10.157.197.82:36204/","bolt://10.157.197.82:36205/","bolt://10.157.197.82:36206/","bolt://10.157.197.82:36207/"};
     // vector<string> servers = {"bolt://10.157.197.82:46200/","bolt://10.157.197.82:46201/","bolt://10.157.197.82:46202/","bolt://10.157.197.82:46203/","bolt://10.157.197.82:46204/","bolt://10.157.197.82:46205/","bolt://10.157.197.82:46206/","bolt://10.157.197.82:46207/"};
-
+    if (argc != 2) {
+        std::cerr << "用法: " << argv[0] << " <端口前缀>" << std::endl;
+        std::cerr << "示例: " << argv[0] << " 62" << std::endl;
+        return 1;  // 返回非0值表示程序异常退出
+    }
+    int port_prefix = std::atoi(argv[1]);
+    if (port_prefix <= 0 || port_prefix > 65535) {
+        std::cerr << "错误: 端口前缀必须是有效的正整数（1-65535）" << std::endl;
+        return 1;
+    }
+    std::vector<std::string> servers;
+    std::string base_url = "bolt://10.157.197.82:";
+    for (int i = 0; i < 8; ++i) {
+        // 拼接完整端口号：前缀 + 00/01/02...07
+        int port = port_prefix * 100 + i;
+        servers.push_back(base_url + std::to_string(port) + "/");
+    }
     string file_path = "./queries/interactive-complex-2-other.txt";
     string neo4jResult;
     string tid = " ";
@@ -313,7 +326,7 @@ int main(int argc, char** argv) {
     string outfile_name = "file_time_" + to_string(world_rank);
     fout.open(outfile_name);
 
-    ifstream fin_id("29011_know*1_2_id_list.txt");
+    ifstream fin_id("933_know*1_2_id_list.txt");
     string line;
     vector<Person> person_list;
     while (getline(fin_id, line)) {
@@ -498,7 +511,7 @@ int main(int argc, char** argv) {
                     Query1Result q1;
                     q1 = parseQuery1Results(query1Other_ans_list[j]);
                     string now_id = q1.friendPerson.id;
-                    if (now_id == "29011") {
+                    if (now_id == "933") {
                         continue;
                     }
                     int flag = 0;

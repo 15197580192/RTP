@@ -1,5 +1,9 @@
-MATCH (m:Comment {id: "7696598189188" })-[:replyOf]-(c:Comment)
-RETURN c.id AS commentId, c.content AS commentContent, c.creationDate AS commentCreationDate
+MATCH (m:Comment {id: "21990305681072" })
+OPTIONAL MATCH (m)-[:replyOf]-(c:Comment)
+RETURN 
+  CASE WHEN c IS NULL THEN m.id ELSE c.id END AS commentId,
+  CASE WHEN c IS NULL THEN m.content ELSE c.content END AS commentContent,
+  CASE WHEN c IS NULL THEN m.creationDate ELSE c.creationDate END AS commentCreationDate
 
 MATCH (m:Comment)-[:replyOf]-(c:Comment)
 RETURN c.id AS commentId, c.content AS commentContent, c.creationDate AS commentCreationDate
@@ -7,7 +11,7 @@ RETURN c.id AS commentId, c.content AS commentContent, c.creationDate AS comment
 MATCH (c:Comment)-[:hasCreator]->(p:Person)
 RETURN c.id AS commentId, p.id AS replyAuthorId, p.firstName AS replyAuthorFirstName, p.lastName AS replyAuthorLastName
 
-MATCH (m:Comment {id: "7696598189188" })-[:hasCreator]->(a:Person)
+MATCH (m:Comment {id: "21990305681072" })-[:hasCreator]->(a:Person)
 RETURN a.id AS OriginalAuthorId
 
 MATCH (a:Person)-[r:knows]-(knowsPerson:Person)

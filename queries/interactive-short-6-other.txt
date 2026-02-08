@@ -1,5 +1,6 @@
-MATCH (m:Comment {id: "7696598189188" })-[:replyOf]->(p:Comment)
-RETURN p
+MATCH (m:Comment {id: "21990305681072" })
+OPTIONAL MATCH (m)-[:replyOf]->(p:Comment)
+RETURN CASE WHEN p IS NULL THEN m ELSE p END
 
 MATCH (m:Comment)-[:replyOf]->(p:Post)
 RETURN p

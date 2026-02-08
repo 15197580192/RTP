@@ -1,8 +1,8 @@
 MATCH (tag:Tag)-[:hasType|isSubclassOf*0..]->(baseTagClass:Tagclass)
-WHERE tag.id = "29971945" OR baseTagClass.id = "5"
+WHERE tag.id = "88773683" OR baseTagClass.id = "5"
 return tag
 
-MATCH (:Person {id: "933" })-[:knows*1..3]-(friend:Person)
+MATCH (:Person {id: "68630179" })-[:knows*1..3]-(friend:Person)
 WITH friend
 ORDER BY friend.lastName
 RETURN friend

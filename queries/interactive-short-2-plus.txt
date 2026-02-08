@@ -1,4 +1,4 @@
-MATCH (:Person {id: "733"})<-[:hasCreator]-(message:Comment)
+MATCH (:Person {id: "68630179"})<-[:hasCreator]-(message:Comment)
 WITH
  message,
  message.id AS messageId,

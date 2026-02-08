@@ -1,13 +1,13 @@
-MATCH (countryX:Place {id: "69" }),
-      (countryY:Place {id: "70" }),
-      (person:Person {id: "933"})
+MATCH (countryX:Place {id: "88772222" }),
+      (countryY:Place {id: "88772223" }),
+      (person:Person {id: "68630179"})
 RETURN countryX, countryY
 LIMIT 1
 
 MATCH (city:Place)-[:isPartOf]->(country:Place)
 RETURN city
 
-MATCH (person:Person {id: "933"})-[:knows*1..3]-(friend)
+MATCH (person:Person {id: "68630179"})-[:knows*1..3]-(friend)
 WHERE NOT person=friend
 WITH friend
 ORDER BY friend.lastName
@@ -28,12 +28,12 @@ RETURN friend, messages
 
 MATCH (message:Post)-[:isLocatedIn]->(country:Place)
 WITH message,
-     CASE WHEN country.id='69' THEN 0 ELSE 1 END AS messageX,
-     CASE WHEN country.id='70' THEN 0 ELSE 1 END AS messageY
+     CASE WHEN country.id='88772222' THEN 0 ELSE 1 END AS messageX,
+     CASE WHEN country.id='88772223' THEN 0 ELSE 1 END AS messageY
 RETURN message, messageX, messageY
 
 MATCH (message:Comment)-[:isLocatedIn]->(country:Place)
 WITH message,
-     CASE WHEN country.id='69' THEN 0 ELSE 1 END AS messageX,
-     CASE WHEN country.id='70' THEN 0 ELSE 1 END AS messageY
+     CASE WHEN country.id='88772222' THEN 0 ELSE 1 END AS messageX,
+     CASE WHEN country.id='88772223' THEN 0 ELSE 1 END AS messageY
 RETURN message, messageX, messageY 

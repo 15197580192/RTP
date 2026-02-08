@@ -26,14 +26,18 @@ include_directories(
 set(EXECUTABLE_TARGETS
     is1     mpiQueryExecution_short_1.cpp
     is1o     mpiQueryExecution_short_1-other.cpp
+    is1p     mpiQueryExecution_short_1_plus.cpp
     is2     mpiQueryExecution_short_2.cpp
     is2p    mpiQueryExecution_short_2_plus.cpp
     is2o    mpiQueryExecution_short_2-other.cpp
     is3     mpiQueryExecution_short_3.cpp
+    is3p     mpiQueryExecution_short_3_plus.cpp
     is3o     mpiQueryExecution_short_3-other.cpp
     is4     mpiQueryExecution_short_4.cpp
     is4o     mpiQueryExecution_short_4-other.cpp
+    is4p     mpiQueryExecution_short_4_plus.cpp
     is5o     mpiQueryExecution_short_5-other.cpp
+    is5p     mpiQueryExecution_short_5_plus.cpp
     is5     mpiQueryExecution_short_5.cpp
     is6     mpiQueryExecution_short_6.cpp
     is6o     mpiQueryExecution_short_6-other.cpp
@@ -49,6 +53,7 @@ set(EXECUTABLE_TARGETS
     ic2p    mpiQueryExecution_complex_2_plus.cpp
     ic3     mpiQueryExecution_complex_3.cpp
     ic3o     mpiQueryExecution_complex_3-other.cpp
+    ic3p     mpiQueryExecution_complex_3_plus.cpp
     ic4     mpiQueryExecution_complex_4.cpp
     ic4o     mpiQueryExecution_complex_4-other.cpp
     ic4p    mpiQueryExecution_complex_4_plus.cpp
@@ -60,6 +65,7 @@ set(EXECUTABLE_TARGETS
     ic6p    mpiQueryExecution_complex_6_plus.cpp
     ic7     mpiQueryExecution_complex_7.cpp
     ic7o     mpiQueryExecution_complex_7-other.cpp
+    ic7p     mpiQueryExecution_complex_7_plus.cpp
     ic8     mpiQueryExecution_complex_8.cpp
     ic8o     mpiQueryExecution_complex_8-other.cpp
     ic8p    mpiQueryExecution_complex_8_plus.cpp
@@ -77,6 +83,7 @@ set(EXECUTABLE_TARGETS
     ic12p   mpiQueryExecution_complex_12_plus.cpp
     ic13    mpiQueryExecution_complex_13.cpp
     ic13o    mpiQueryExecution_complex_13-other.cpp
+    ic13p    mpiQueryExecution_complex_13_plus.cpp
     ic14    mpiQueryExecution_complex_14.cpp
     ic14o    mpiQueryExecution_complex_14-other.cpp
     ic14p   mpiQueryExecution_complex_14_plus.cpp

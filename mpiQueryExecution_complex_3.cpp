@@ -505,7 +505,7 @@ int main(int argc, char** argv) {
     auto start = std::chrono::high_resolution_clock::now();
 
     // vector<string> queries = {"MATCH (c:Comment)\n RETURN c\n LIMIT 2"};
-    vector<string> servers = {"bolt://10.157.197.82:16200/","bolt://10.157.197.82:16201/","bolt://10.157.197.82:16202/","bolt://10.157.197.82:16203/","bolt://10.157.197.82:16204/","bolt://10.157.197.82:16205/","bolt://10.157.197.82:16206/","bolt://10.157.197.82:16207/"};
+    vector<string> servers = {"bolt://10.157.197.82:6200/","bolt://10.157.197.82:6201/","bolt://10.157.197.82:6202/","bolt://10.157.197.82:6203/","bolt://10.157.197.82:6204/","bolt://10.157.197.82:6205/","bolt://10.157.197.82:6206/","bolt://10.157.197.82:6207/"};
 
     string file_path = "./queries/interactive-complex-3.txt";
     string neo4jResult;
@@ -596,6 +596,7 @@ int main(int argc, char** argv) {
                     q1 = parseQuery1Results(query1_ans_list[j]);
                     query1Results.push_back(q1);
                     cid = cid + q1.countryX.id + ", " + q1.countryY.id;
+                    if(q1.countryX.id.length()!=2&&q1.countryY.id.length()!=2) break;
                 }
                 cid = cid + "]\n";
                 // cout << "cid: " << cid << endl;

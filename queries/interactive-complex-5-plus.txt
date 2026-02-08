@@ -1,4 +1,4 @@
-MATCH (person:Person { id: "933" })-[:knows*1..3]-(otherPerson)
+MATCH (person:Person { id: "68630179" })-[:knows*1..3]-(otherPerson)
 WHERE person <> otherPerson
 WITH otherPerson
 ORDER BY otherPerson.lastName

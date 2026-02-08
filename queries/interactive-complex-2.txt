@@ -1,4 +1,4 @@
-MATCH (:Person {id: "13778"})-[:knows*1..2]-(friend:Person)
+MATCH (:Person {id: "68630179"})-[:knows*1..2]-(friend:Person)
 WITH friend
 ORDER BY friend.lastName
 RETURN DISTINCT friend

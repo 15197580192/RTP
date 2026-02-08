@@ -67,16 +67,24 @@ def get_result(sentence, nowIP):
 
 if __name__ == "__main__":
     # sentence = "MATCH (m:Comment{id:\"19968660\"})-[:hasCreator]->(p:Person) RETURN p"
-    # sentence = "MATCH (m)-[r]->(p) return m limit 10"
+    sentence = "MATCH (m) return m limit 10"
     # sentence = "MATCH (n:Comment {id: \"7696598189188\" }) return n limit 10"
     # sentence = 'MATCH (person:Person {id: "13778"})-[:knows*2..3]-(friend) WHERE NOT friend=person AND      NOT (friend)-[:knows]-(person)	WITH friend	ORDER BY friend.creationDate DESC	RETURN DISTINCT friend	LIMIT 100'
-    sentence = "MATCH (m:Comment{id:'8246361067507'}) SET m.content='About Kingdom of Navarre_ _ French' return m"
-    print(get_result(sentence, "bolt://10.157.197.82:36200/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36201/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36202/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36203/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36204/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36205/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36206/"))
-    print(get_result(sentence, "bolt://10.157.197.82:36207/"))
+    # sentence = "MATCH (m:Comment{id:'8246361067507'}) SET m.content='About Kingdom of Navarre_ _ French' return m"
+    print(get_result(sentence, "bolt://10.157.197.82:6200/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6201/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6202/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6203/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6204/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6205/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6206/"))
+    print(get_result(sentence, "bolt://10.157.197.82:6207/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16200/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16201/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16202/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16203/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16204/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16205/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16206/"))
+    print(get_result(sentence, "bolt://10.157.197.82:16207/"))
     

@@ -1,7 +1,7 @@
-MATCH (company:Organisation)-[:isLocatedIn]->(:Place {id: "29978515" })
+MATCH (company:Organisation)-[:isLocatedIn]->(:Place {id: "88772223" })
 RETURN company
 
-MATCH (person:Person {id: "933" })-[:knows*1..2]-(friend:Person)
+MATCH (person:Person {id: "68630179" })-[:knows*1..2]-(friend:Person)
 WHERE not(person=friend)
 WITH DISTINCT friend
 MATCH (friend:Person)-[workat:workAt]->(company:Organisation)
@@ -15,4 +15,4 @@ RETURN
 ORDER BY
         organizationWorkFromYear ASC,
         organizationName DESC
-LIMIT 10
+LIMIT 1000

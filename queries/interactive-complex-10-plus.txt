@@ -1,4 +1,4 @@
-MATCH (person:Person {id: "933"})-[:knows*2..3]-(friend)
+MATCH (person:Person {id: "68630179"})-[:knows*2..3]-(friend)
 WHERE NOT friend=person AND
       NOT (friend)-[:knows]-(person)
 WITH friend

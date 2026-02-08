@@ -1,7 +1,7 @@
-MATCH (start:Person {id: "933"})<-[:hasCreator]-(message:Comment)
+MATCH (start:Person {id: "68630179"})<-[:hasCreator]-(message:Comment)
 RETURN message
 
-MATCH (start:Person {id: "933"})<-[:hasCreator]-(message:Post)
+MATCH (start:Person {id: "68630179"})<-[:hasCreator]-(message:Post)
 RETURN message
 
 MATCH (message:Comment)<-[:replyOf*1..2]-(comment:Comment)

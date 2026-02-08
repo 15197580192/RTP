@@ -574,7 +574,7 @@ int main(int argc, char** argv) {
     // vector<string> servers = {"bolt://10.157.197.82:36200/","bolt://10.157.197.82:36201/","bolt://10.157.197.82:36202/","bolt://10.157.197.82:36203/","bolt://10.157.197.82:36204/","bolt://10.157.197.82:36205/","bolt://10.157.197.82:36206/","bolt://10.157.197.82:36207/"};
     vector<string> servers = {"bolt://10.157.197.82:46200/","bolt://10.157.197.82:46201/","bolt://10.157.197.82:46202/","bolt://10.157.197.82:46203/","bolt://10.157.197.82:46204/","bolt://10.157.197.82:46205/","bolt://10.157.197.82:46206/","bolt://10.157.197.82:46207/"};
 
-    string file_path = "./queries/interactive-complex-0-knows1.txt";
+    string file_path = "./queries/interactive-complex-0-knows.txt";
     string neo4jResult;
     string tid = " ";
     string tid1 = " ";
@@ -781,7 +781,7 @@ int main(int argc, char** argv) {
 
                 for (int j = 0; j < query2Results.size(); j++) {
                     string now_id = query2Results[j].friendPerson.id;
-                    if (now_id == "13194139587300") {
+                    if (now_id == "933") {
                         continue;
                     }
                     int flag = 0;
@@ -915,7 +915,7 @@ int main(int argc, char** argv) {
 
                     for (int j = 0; j < query3Results.size(); j++) {
                         string now_id = query3Results[j].friendPerson.id;
-                        if (now_id == "13194139587300") {
+                        if (now_id == "933") {
                             continue;
                         }
                         int flag = 0;
@@ -984,26 +984,26 @@ int main(int argc, char** argv) {
     }
     MPI_Finalize();
     
-            // ofstream pout22("13194139587300_know*1_2_id_list.txt");
+            // ofstream pout22("933_know*1_2_id_list.txt");
             // for(int kk=0;kk<query1Results.size();kk++){
             //     Query1Result q1=query1Results[kk];
             //     pout22<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
             // }
-            // ofstream pout("13194139587300_know*2_2_id_list.txt");
+            // ofstream pout("933_know*2_2_id_list.txt");
             // for(int kk=0;kk<query2Results.size();kk++){
             //     Query2Result q1=query2Results[kk];
             //     pout<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
             // }
-            // ofstream pout22("13194139587300_know*1_3_id_list.txt");
-            // for(int kk=0;kk<query1Results.size();kk++){
-            //     Query1Result q1=query1Results[kk];
-            //     pout22<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
-            // }
-            // ofstream pout("13194139587300_know*2_3_id_list.txt");
-            // for(int kk=0;kk<query3Results.size();kk++){
-            //     Query3Result q1=query3Results[kk];
-            //     pout<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
-            // }
+            ofstream pout22("933_know*1_3_id_list.txt");
+            for(int kk=0;kk<query1Results.size();kk++){
+                Query1Result q1=query1Results[kk];
+                pout22<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
+            }
+            ofstream pout("933_know*2_3_id_list.txt");
+            for(int kk=0;kk<query3Results.size();kk++){
+                Query3Result q1=query3Results[kk];
+                pout<<q1.friendPerson.id<<"|"<<q1.friendPerson.firstName<<"|"<<q1.friendPerson.lastName<<"|"<<q1.friendPerson.birthday<<"|"<<q1.friendPerson.creationDate<<"|"<<q1.distance<<endl;
+            }
 
     auto end = std::chrono::high_resolution_clock::now();
 

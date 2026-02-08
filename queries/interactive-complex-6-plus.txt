@@ -1,7 +1,7 @@
-MATCH (knownTag:Tag { id: "29971945" })
+MATCH (knownTag:Tag { id: "88773686" })
 RETURN knownTag.id as knownTagId
 
-MATCH (person:Person { id: "933" })-[:knows*1..2]-(friend:Person)
+MATCH (person:Person { id: "68630179" })-[:knows*1..2]-(friend:Person)
 WHERE NOT person=friend
 RETURN friend
 LIMIT 20

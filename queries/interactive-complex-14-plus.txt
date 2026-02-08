@@ -1,4 +1,4 @@
-MATCH (start:Person {id: "933"}), (end:Person {id: "64877"}),
+MATCH (start:Person {id: "68630179"}), (end:Person {id: "68633674"}),
       path = shortestPath((start)-[:knows*..15]-(end)) 
 RETURN nodes(path) as pathNodes
 

@@ -1,4 +1,4 @@
-MATCH (root:Person {id: "933" })-[:knows*1..2]-(friend:Person)
+MATCH (root:Person {id: "68630179" })-[:knows*1..2]-(friend:Person)
 WHERE NOT friend = root
 WITH friend
 ORDER BY friend.lastName ASC
