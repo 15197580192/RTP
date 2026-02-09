@@ -74,10 +74,10 @@ def saveVexBelong(outPath):
             txtfile.write(key + ' ' + str(csvVexFile[key][0]) + ' ' + str(csvVexFile[key][1]) + '\n')
 
 # nohup python3 csv2net_sheep.py >csv2net_sheep.log &
-inPath = '/data1/lq/RCP/import/' # csv文件目录地址
+inPath = '/data1/hzy/RTP/import/' # csv文件目录地址
 start = time.perf_counter()
-resVexID = toVex(inPath,'/data1/hzy/neo4j/partition_code/result/result_sheep/vexKey_sheep.txt') # 第二个参数为点原ID与新ID对应关系的保存文件
-toEdges(inPath,'/data1/hzy/neo4j/partition_code/result/result_sheep/result_sheep.net',resVexID) # 第二个参数为边集文件保存地址
-saveVexBelong('/data1/hzy/neo4j/partition_code/result/result_sheep/vexBelong_sheep.txt') # 参数为每类点id范围保存文件地址
+resVexID = toVex(inPath,'/data1/hzy/neo4j/partition_code/result/result_sheep/30/vexKey_sheep.txt') # 第二个参数为点原ID与新ID对应关系的保存文件
+toEdges(inPath,'/data1/hzy/neo4j/partition_code/result/result_sheep/30/result_sheep.net',resVexID) # 第二个参数为边集文件保存地址
+saveVexBelong('/data1/hzy/neo4j/partition_code/result/result_sheep/30/vexBelong_sheep.txt') # 参数为每类点id范围保存文件地址
 end = time.perf_counter()
 print(str(end-start))

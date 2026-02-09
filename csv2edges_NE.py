@@ -76,10 +76,10 @@ def saveVexBelong(outPath):
 
 
 # nohup python3 csv2edges_NE.py >csv2edges_NE.log &
-inPath = '/data1/lq/RCP/import/' # csv文件目录地址
+inPath = '/data1/hzy/RTP/import/' # csv文件目录地址
 start = time.perf_counter()
-resVexID = toVex(inPath,'/data1/hzy/neo4j/partition_code/result/result_NE/vexKey_NE.txt') # 第二个参数为点原ID与新ID对应关系的保存文件
-toEdges(inPath,'/data1/hzy/neo4j/partition_code/result/result_NE/result_NE.edges',resVexID) # 第二个参数为边集文件保存地址
-saveVexBelong('/data1/hzy/neo4j/partition_code/result/result_NE/vexBelong_NE.txt') # 参数为每类点id范围保存文件地址
+resVexID = toVex(inPath,'/data1/hzy/neo4j/partition_code/result/result_NE/30/vexKey_NE.txt') # 第二个参数为点原ID与新ID对应关系的保存文件
+toEdges(inPath,'/data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges',resVexID) # 第二个参数为边集文件保存地址
+saveVexBelong('/data1/hzy/neo4j/partition_code/result/result_NE/30/vexBelong_NE.txt') # 参数为每类点id范围保存文件地址
 end = time.perf_counter()
 print(str(end-start))

@@ -27,6 +27,30 @@
 		2、运行命令mpirun -n <进程数> ./DistributedNE <边集文件地址> <分区数>，ps：进程数与分区数相等
 		3、运行完成后会生成一个记录有分区信息的边集文件，可能存放在程序目录内或者边集文件地址下
 	    其余程序使用详情请看源代码github页面的说明
+		```
+		root@controller:/data1/hzy/neo4j/partition_code/code/NE/build# mpirun -n 8 ./DistributedNE  /data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges 8
+		Start ./DistributedNE
+		Initialization Start.
+		Open file: /data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges
+		Initialization Finish. Time (sec): 104.357
+		== Initialization Information ==
+		Graph: /data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges
+		# of Verts:  88789832
+		# of Edges: 540915383
+		# of Partition:    8
+		Balance Factor: 1.01
+		================================
+		!!!!!!!!!! Compute Partition !!!!!!!!!!!!!
+		# of Iteration: 225. # of Processed Edges: 538629051 / 540915383
+		!!!!!!!!!! Finish Partition !!!!!!!!!!!!!
+		======== Result Information ========
+		Replication factor: 1.0211
+		Compute time (sec): 318.518
+		====================================
+		<<<< Start to Output Result to  /data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges.8.pedges >>>>
+		Rank ...  0 1 2 3 4 5 6 7 ... Finish. 
+		<<<< The Partitioned Graph is in /data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges.8.pedges >>>>
+		```
 		
 
 	Sheep：
@@ -37,16 +61,69 @@
 		3、该程序分区后会输出多个文件，每个分区都是一个单独的边集文件，形如data0000、data0001、data0002......
 	    其余程序使用详情请看源代码github页面的说明
 	    该程序分区完成后会单独输出每个分区的文件，需要使用脚本sheep_merge.py，将所有分区文件合并成一个分区文件
+		```
+		root@controller:/data1/hzy/neo4j/partition_code/code/sheep# ./scripts/dist-partition.sh -o /data1/hzy/neo4j/partition_code/result/result_sheep/sheep/data /data1/hzy/neo4j/partition_code/result/result_sheep/30/result_sheep.net 8
+		Starting dist-partition on /data1/hzy/neo4j/partition_code/result/result_sheep/30/result_sheep.net with 2 workers...
+		s:1 a:1 i:1 r:1 c:2
+		Sorted in 300.73199717 seconds.
+		Loaded in 0.0 seconds.
+		Mapped in 189.83644054 seconds.
+		Reduced in 24.95764401 seconds.
+		Loaded tree in: 6.229000 seconds
+		TREEFAQS: width:1062    roots:1
+				vheight:344146  eheight:63959798
+				verts:88789833  edges:540915383
+				halo:11593      core:0
+				fill:0
+		Partitioning took: 5.258000 seconds
+		Actually created 8 partitions.
+		First two partition sizes: 11371652 and 10645477
+		Finished in: 1171.732000 seconds
+		Partitioned in 1171.91218519 seconds.
+		```
 
 	HDRF：
 	    源代码地址https://github.com/fabiopetroni/VGP
 	    使用步骤：
-		1、进入到/data1/hzy/neo4j/partition_code/code/VGP/目录下(fix:直接使用code目录下VGP.jar替换VGP/dit目录底下VGP.jar，Edge的compareTo直接返回-1修复不同label边去重问题)
+		1、进入到/data1/hzy/neo4j/partition_code/code/VGP/目录下(fix:直接使用code目录下VGP.jar替换VGP/dit目录底下VGP.jar，Edge的compareTo直接返回-1修复不同label边去重问题，边集文件的分隔符由/t改为空格)
 		2、运行命令java -Xms128M -Xmx128M -jar dist/VGP.jar 边集文件地址 分区数 -algorithm hdrf -lambda 3 -threads 1 -output 分区后的文件输出地址
 		3、注意一定要通过-Xms和-Xmx选项去修改jvm运行时内存大小，否则读取边的速度在占用内存达到jvm限制时会变得非常慢，-Xms和-Xmx设置的内存大小最好大一点，我处理
 		     26G大小的文件时设置了200G内存
 		4、运行完成后会生成三个文件，其中一个是记录有分区信息的边集文件
 	    其余程序使用详情请看源代码github页面的说明
+		```
+		java -Xms128M -Xmx200G -jar dist/VGP.jar /data1/hzy/neo4j/partition_code/result/result_HDRF/30/result_HDRF.txt 8 -algorithm hdrf -lambda 3 -threads 1 -output /data1/hzy/neo4j/partition_code/result/result_HDRF/30
+		--------------------------------------------------
+		VGP: A Software Package for one-pass Vertex-cut balanced Graph Partitioning.
+		author: Fabio Petroni (http://www.fabiopetroni.com) hzy editd at 2026.01.21
+		--------------------------------------------------
+
+		Parameters:
+
+			graphfile: /data1/hzy/neo4j/partition_code/result/result_HDRF/30/result_HDRF.txt
+			parts: 8
+			algorithm: hdrf (lambda: 3.0)
+			threads: 1
+			output: /data1/hzy/neo4j/partition_code/result/result_HDRF/30
+
+		Loading graph into main memory... 957 seconds
+
+		Info:
+
+			vertices: 88789833
+			edges: 540915383
+			min-degree: 1
+			max-degree: 12684688
+
+		Running program... 1982 seconds
+
+		Results:
+
+			Replication factor: 1.7845
+			Load relative standard deviation: 0.0
+			Max partition size (edge cardinality): 67614423
+			Max partition size (vertex cardinality): 19817701
+		```
 	```
 	// VGP/core/Edge.java
 	@Override

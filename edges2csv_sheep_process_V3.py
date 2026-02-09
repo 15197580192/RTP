@@ -190,10 +190,10 @@ def edgeaToCsv(inPath, outPath, csvEdges, idx):
 # nohup python3 -u edges2csv_sheep_process_V3.py >edges2csv_sheep.log 2>&1 &
 if __name__ == "__main__": 
     start = time.perf_counter()
-    inPath = '/data1/lq/RCP/import/' # 原csv文件地址
-    outPath = '/data1/hzy/neo4j/partition_code/result/result_sheep/csv/' # 新分区后的csv文件保存地址
-    getVex('/data1/hzy/neo4j/partition_code/result/result_sheep/') # 获取点信息
-    getEdges('/data1/hzy/neo4j/partition_code/result/result_sheep/result.txt', 8) # 获取8个分区的边信息
+    inPath = '/data1/hzy/RTP/import/' # 原csv文件地址
+    outPath = '/data1/hzy/neo4j/partition_code/result/result_sheep/30/csv/' # 新分区后的csv文件保存地址
+    getVex('/data1/hzy/neo4j/partition_code/result/result_sheep/30/') # 获取点信息
+    getEdges('/data1/hzy/neo4j/partition_code/result/result_sheep/30/result.txt', 8) # 获取8个分区的边信息
     end = time.perf_counter()
     t1 = str(end-start)
 

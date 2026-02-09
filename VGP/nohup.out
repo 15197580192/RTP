@@ -1,0 +1,33 @@
+
+--------------------------------------------------
+ VGP: A Software Package for one-pass Vertex-cut balanced Graph Partitioning.
+ author: Fabio Petroni (http://www.fabiopetroni.com) hzy editd at 2026.01.21
+--------------------------------------------------
+
+ Parameters:
+
+	graphfile: /data1/hzy/neo4j/partition_code/result/result_HDRF/30/result_HDRF.txt
+	parts: 8
+	algorithm: hdrf (lambda: 3.0)
+	threads: 1
+	output: /data1/hzy/neo4j/partition_code/result/result_HDRF/30
+
+ Loading graph into main memory... 957 seconds
+
+ Info:
+
+	vertices: 88789833
+	edges: 540915383
+	min-degree: 1
+	max-degree: 12684688
+
+ Running program... 1982 seconds
+
+ Results:
+
+	Replication factor: 1.7845
+	Load relative standard deviation: 0.0
+	Max partition size (edge cardinality): 67614423
+	Max partition size (vertex cardinality): 19817701
+
+

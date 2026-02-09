@@ -183,19 +183,21 @@ def edgeaToCsv(inPath, outPath, csvEdges, idx):
                             if(row[0]+'@'+row[1] in csvEdges[str(idx)][csvEdgesFile[key][0]+'@'+csvEdgesFile[key][1]]):
                                 newcsv_writer.writerow(row) #写入
                                 # del csvEdges[str(idx)][csvEdgesFile[key][0]+'@'+csvEdgesFile[key][1]][row[0]+'@'+row[1]]
-                        if(csvEdgesFile[key][1]+'@'+csvEdgesFile[key][0] in csvEdges[str(idx)]):
+                        elif(csvEdgesFile[key][1]+'@'+csvEdgesFile[key][0] in csvEdges[str(idx)]):
                             if(row[1]+'@'+row[0] in csvEdges[str(idx)][csvEdgesFile[key][1]+'@'+csvEdgesFile[key][0]]):
                                 newcsv_writer.writerow(row) #写入
                                 # del csvEdges[str(idx)][csvEdgesFile[key][1]+'@'+csvEdgesFile[key][0]][row[1]+'@'+row[0]]
+                        else:
+                            print("没有划分的边:"+row)
 
 
 # nohup python3 -u edges2csv_NE_process_V3.py >edges2csv_NE_process.log 2>&1 &
 if __name__ == "__main__": 
     start = time.perf_counter()
-    inPath = '/data1/lq/RCP/import/' # 原csv文件地址
-    outPath = '/data1/hzy/neo4j/partition_code/result/result_NE/csv/' # 新分区后的csv文件保存地址
-    getVex('/data1/hzy/neo4j/partition_code/result/result_NE/') # 获取点信息
-    getEdges('/data1/hzy/neo4j/partition_code/result/result_NE/result_NE.edges.8.pedges', 8) # 获取8个分区的边信息
+    inPath = '/data1/hzy/RTP/import/' # 原csv文件地址
+    outPath = '/data1/hzy/neo4j/partition_code/result/result_NE/30/csv/' # 新分区后的csv文件保存地址
+    getVex('/data1/hzy/neo4j/partition_code/result/result_NE/30/') # 获取点信息
+    getEdges('/data1/hzy/neo4j/partition_code/result/result_NE/30/result_NE.edges.8.pedges', 8) # 获取8个分区的边信息
     end = time.perf_counter()
     t1 = str(end-start)
 
