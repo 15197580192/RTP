@@ -63,7 +63,7 @@ public class Input {
             String line;
             while((line = in.readLine())!=null){
                 if (line.startsWith("#")){continue;} //skip comments
-                String values[] = line.split("\t");
+                String values[] = line.split(" ");
                 int u = Integer.parseInt(values[0]);
                 int v = Integer.parseInt(values[1]);
                 if (u!=v){  //self connection not allowed
